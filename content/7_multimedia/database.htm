@@ -1,0 +1,651 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<link rel=Edit-Time-Data href="/content/6_database/Databases_files/editdata.mso">
+<title>Databases:</title>
+<style><!--
+.SpellE
+	{}
+.GramE
+	{}
+.Section1
+	{page:Section1;}
+-->
+
+body {
+  padding: 0px 0px 0px 20px;
+}
+
+</style>
+
+<STYLE>
+<!--
+A.ssmItems:link		{color:black;text-decoration:none;}
+A.ssmItems:hover	{color:black;text-decoration:none;}
+A.ssmItems:active	{color:black;text-decoration:none;}
+A.ssmItems:visited	{color:black;text-decoration:none;}
+//-->
+</STYLE>
+
+
+<SCRIPT SRC="ssm.js" language="JavaScript1.2">
+
+//Dynamic-FX slide in menu v6.5 (By maXimus, maximus@nsimail.com)
+//Site: http://maximus.ravecore.com/
+//For full source, and 100's more DHTML scripts, visit http://www.dynamicdrive.com
+
+</SCRIPT>
+
+<SCRIPT SRC="ssmItems.js" language="JavaScript1.2"></SCRIPT>
+
+<script language="JavaScript" type="text/JavaScript">
+
+//<SCRIPT SRC="/content/6_database/ssm.js" language="JavaScript1.2">
+
+//Dynamic-FX slide in menu v6.5 (By maXimus, maximus@nsimail.com)
+//Site: http://maximus.ravecore.com/
+//For full source, and 100's more DHTML scripts, visit http://www.dynamicdrive.com
+
+</SCRIPT>
+
+<SCRIPT SRC="/content/6_database/ssmItems.js" language="JavaScript1.2"></SCRIPT>
+
+
+</head>
+<body bgcolor="#FFFFFF" link=blue vlink=purple leftmargin="42" class="Normal" lang=EN-US>
+<div class=Section1> 
+  <p><b><u><span
+style='font-size:20.0pt'>Introduction to Databases</span></u></b></p>
+  <p>What is a database? A database is a collection of data stored in a way that 
+    makes it more accessible and useful.  While we usually think of electronic 
+    databases, we have had databases around for a long time.  Recipe files, card 
+    catalogues in libraries, and libraries themselves are all databases.  There 
+    are a variety of “<b><i>hardcopy databases</i>”</b> that we still use including 
+    a phone book, Course directories, an Encyclopedia, a plain old Filing cabinet 
+    and the list goes on and on.</p>
+  <p>Here is an interesting excerpt from Carnegie Mellon:</p>
+  <p><br>
+    ” <span style='font-size:10.0pt;font-family:Helvetica'>The type of database 
+    application should dictate the choice of database management technology. In 
+    general, database applications can be categorized into two different applications: 
+    </span></p>
+  <p> <em><span style='font-size:10.0pt;font-family:
+Helvetica'>Data collection applications</span></em><span style='font-size:10.0pt;
+font-family:Helvetica'> focus on entering data into a database and providing queries 
+    to obtain information about the data. Examples of these kinds of database 
+    applications are accounts payable, accounts receivable, order processing, 
+    and inventory control. Because these types of applications contain relatively 
+    simple data relationships and schema design, relational database management 
+    systems (<span class=SpellE>RDBMs</span>) are better suited for these applications. 
+    </span><span
+style='font-size:10.0pt;font-family:Helvetica;'><span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    </span></span> <span style='font-size:10.0pt;font-family:Helvetica'>&nbsp;</span></p>
+  <p> <em><span style='font-size:10.0pt;font-family:
+Helvetica'>Information analysis applications</span></em><span style='font-size:
+10.0pt;font-family:Helvetica'> focus on providing the capability to navigate through 
+    and analyze large volumes of data. Examples of these applications are CAD/CAM/CAE, 
+    production planning, network planning, and financial engineering. These types 
+    of applications are very dynamic and their database schemas are very complex. 
+    This type of application requires a tightly-coupled language interface and 
+    the ability to handle the creation and evolution of schema of arbitrary complexity 
+    without a lot of programmer intervention. Object-oriented databases support 
+    these features to a great degree and are therefore better suited for the information 
+    analysis type of applications [<a
+href="http://www.sei.cmu.edu/str/indexes/references/Desanti_94_bold.html"
+target=references>Desanti 94</a>].  <span
+class=SpellE>OODBs</span> are also used in applications handling <span
+class=SpellE>BLOBs</span> (binary large objects) such as images, sound, video, 
+    and unformatted text. <span class=SpellE>OODBs</span> support diverse data 
+    types rather than only the simple tables, columns and rows of relational databases.”<br>
+    <br>
+    <a href="http://www.sei.cmu.edu/str/descriptions/oodatabase.html">http://www.sei.cmu.edu/str/descriptions/oodatabase.html</a> 
+    </span></p>
+  <p><span
+class=GramE><em><span style='font-size:10.0pt;font-family:Helvetica'>O.K.</span></em></span><em><span
+style='font-size:10.0pt;font-family:Helvetica'> So what is an OBJECT?  The <span class=GramE>idea 
+    of objects are</span> self contained programs or functions and data that you 
+    can move from on program to another and reuse them.  One example is the code 
+    which generates the menu bars in the windows operating system.  It is pretty 
+    much the same for all windows software—thus it is s reusable object.  In an 
+    object oriented database the objects are programs or blobs that are semi self 
+    contained.</span></em><em></em></p>
+  <p>Most of the databases we are concerned with in IT are electronic. You can 
+    think of databases as an electronic filing cabinet for data. But what is data?  
+    Data can be <b><i>Text, Numbers, Pictures, Songs, Videos</i></b> or other 
+    types of information that we want to store.</p>
+  <p>Until recently data were seen as number and text.  But as the information 
+    age has grown pretty much anything that can be stored electronically can be 
+    a type of data and thus collected into a database.  Let’s take a DVD for example.  
+    A DVD is a collection of pictures, that the software throws up on screen fast 
+    enough to mimic motions.  Those pictures themselves are organizes in such 
+    a way that they make sense in terms of the movie.  Yet each picture is also 
+    a collection of pixels that are represented by a set of numbers often called 
+    the pixels.</p>
+  <p> <span
+style='position:absolute;z-index:6;
+width:534px;height:30px'> 
+    <table cellpadding=0 cellspacing=0>
+      <tr> 
+        <td width=534 height=30 bgcolor=white class="Normal"> <span
+  style='position:absolute;z-index:6'> 
+          <table cellpadding=0 cellspacing=0 width="100%">
+            <tr> 
+              <td class="Normal"> <div v:shape="_x0000_s1044" style='padding:3.6pt 7.2pt 3.6pt 7.2pt'
+    class=shape> 
+                  <p><span style='font-size:10.0pt'>Pixel Values                              
+                    Single Image                                    Motion Image</span></p>
+                </div></td>
+            </tr>
+          </table>
+          </span> &nbsp; </td>
+      </tr>
+    </table>
+    </span> <br>
+  </p>
+  <table width="54%" border="1">
+    <tr>
+      <td width="25%"><table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0>
+          <tr> 
+            <td width=24 valign=top class="Normal"> <p>0</p></td>
+            <td width=36 valign=top class="Normal"> <p>34</p></td>
+            <td width=36 valign=top class="Normal"> <p>56</p></td>
+            <td width=48 valign=top class="Normal"> <p>78</p></td>
+          </tr>
+          <tr> 
+            <td width=24 valign=top class="Normal"> <p>0</p></td>
+            <td width=36 valign=top class="Normal"> <p>34</p></td>
+            <td width=36 valign=top class="Normal"> <p>57</p></td>
+            <td width=48 valign=top class="Normal"> <p>90</p></td>
+          </tr>
+          <tr> 
+            <td width=24 valign=top class="Normal"> <p>0</p></td>
+            <td width=36 valign=top class="Normal"> <p>36</p></td>
+            <td width=36 valign=top class="Normal"> <p>59</p></td>
+            <td width=48 valign=top class="Normal"> <p>100</p></td>
+          </tr>
+          <tr> 
+            <td width=24 valign=top class="Normal"> <p>0</p></td>
+            <td width=36 valign=top class="Normal"> <p>33</p></td>
+            <td width=36 valign=top class="Normal"> <p>55</p></td>
+            <td width=48 valign=top class="Normal"> <p>103</p></td>
+          </tr>
+        </table></td>
+      <td width="18%"><img width=145 height=208
+  src="http://projects.juniata.edu/it110/images/db_1.gif" v:shapes="_x0000_s1035"></td>
+      <td width="57%"><img src="http://projects.juniata.edu/it110/images/db_002.png" width="291" height="215"></td>
+    </tr>
+  </table>
+  <p>Furthermore a collection of videos could either be stored in a physical form, 
+    such as in a library or electronically in a database.  So….. a database contains 
+    or stores data – but how is the data arranged or organized?</p>
+  <p><b><u>Organizing the Data</u></b></p>
+  <p>The point of a database is to organize data so it is more useful.  The following 
+    MS Excel sheets have the same information in them. The first is far less useful 
+    however as the information is all jumbled.  It would take far more time to 
+    get to the information in the first than the second sheet. <br>
+    <br>
+    <img border=0 width=492 height=351
+src="http://projects.juniata.edu/it110/images/db_5.jpg" v:shapes="_x0000_i1025"> </p>
+  <p><b><br>
+    <img border=0 width=492 height=369
+src="http://projects.juniata.edu/it110/images/db_7.jpg" v:shapes="_x0000_i1026"> </b></p>
+  <p><br>
+    So you see that for data to be useful – we must organize it!  How do we organize 
+    the data?  You wouldn’t want a table or Excel sheet for every way to organize 
+    data would you?  Go to <a href="http://mysimon.com/" target="_blank">mysimon.com</a> 
+    and search for an item you want to buy. How many ways can you sort the information 
+    by?</p>
+  <p><b><i>Alphabetic</i></b></p>
+  <p><b><i>Date</i></b></p>
+  <p><b><i>Ownership</i></b></p>
+  <p><b><i>Type</i></b></p>
+  <p><b><i>Cost </i></b></p>
+  <p><b><i>Subject: Table of contents</i></b></p>
+  <p><b><i>Topic or word: index </i></b></p>
+  <p>All of the information is in a database and the search criterion simply looks 
+    for a different <b><i>attribute</i></b> depending on user input or the user’s 
+    request.  In general, for a database to be useful the data must be organized 
+    in some fashion and then you must be able to actually “query” the data to 
+    extract information.  Additionally, the database would be useless if we couldn’t 
+    update it as well.  Therefore, the basic functions of a database are to manage 
+    and maintain the data and to allow access to the data.  Database software 
+    (MS Access, <span class=SpellE>MySQL</span>, etc…) is referred to as the database 
+    management system (DBMS) and it allows for several other aspects of database 
+    management that include defining the database, constructing, managing and 
+    maintaining, querying, and providing security (i.e. who can access the data).</p>
+  <p>It may be helpful to try to visualize how a database is organized in order 
+    to better understand the concepts.  Let us do this by considering data or 
+    information and how it is stored or arranged.  First, we recall that data 
+    is in the computer world is made up of bits and bytes and thus all information 
+    is stored in some digital format most typically in a table of some sorts.  
+    The table is made up of rows and columns or records and fields.  Let us look 
+    at the second Excel table example from above:</p>
+  <p><b> <img border=0 width=492 height=369
+src="http://projects.juniata.edu/it110/images/db_7.jpg" v:shapes="_x0000_i1027"> </b></p>
+  <p>Note that there are many rows (records) and there are also several columns 
+    or fields (Course, Title, Instructor, etc<span class=GramE>..)</span>.  Each 
+    record contains several pieces of data – one for each field.  It is possible 
+    that a field is empty within a given record.  So at this point, we have pieces 
+    of data or information stored in a field within a record.  Collectively, these 
+    records become a table.  You may also think of each table as a separate file 
+    for these simple examples.  The collection of tables (or files) makes up the 
+    database and the ability to interact with the tables, records, and fields 
+    is the database management system or DBMS. It is the arrangement of these 
+    tables and files, as well as the relationships between the tables, records, 
+    and fields that determines the type of database. Graphically, this can be 
+    represented as follows:</p>
+  <p><span style='font-size:26.0pt;color:red'> <img border=0 width=441 height=340
+src="http://projects.juniata.edu/it110/images/db_8.gif" v:shapes="_x0000_i1033"> </span></p>
+  <p>As we previously discussed, there are a number of components to a database 
+    with the main components being the tables (even though all components are 
+    important).  There are also a number of database types or models.  The most 
+    simplistic is called a flat file, which is just data or information in a text 
+    file – so it is not really a database, but it does store data.  They are called 
+    flat files because they are simply the rows and column separated by commas 
+    or spaces, or tabs, or some other marker.  They can either be completely ASCII 
+    text or made to appear in a table format such as Excel examples illustrated 
+    earlier:</p>
+  <p>Here is an image or example of a flat file.</p>
+  <p> <img width=594 height=258
+src="/db_021.png"
+alt="Text Box: Course,Title,Instructor,Division,Skill(s),Credits,Fee,Schedule&#13;&#10;CA 299 01,St: Infect. Disease&amp;soc.,&quot;Martin,P&quot;,,CAII,3,,BSC B200 LEC MWF 08:00AM 08:55AM&#13;&#10;CH 105X 01,Org.Chem.Conc/Extra Help,&quot;Mulfinger,L&quot;,,,1,,VLB 1022 DIS WF 08:00AM 08:55AM&#13;&#10;CH 301 01,Biochem.&amp;Molecular Bio.I,&quot;Reed,R&quot;,N,,3,,VLB 1098 LEC MWF 08:00AM 08:55AM&#13;&#10;CH 321 01,Organic Reactions,&quot;Lewis,S&quot;,N,,3,,VLB 2011 LEC MWF 08:00AM 08:55AM&#13;&#10;CS 110 01,Computer Science I,&quot;Thomas,W&quot;,N,,4,,BSC C102 LEC MWF 09:00AM 09:55AM&#13;&#10;CS 220 01,Computer Organization,&quot;Wright,J&quot;,N,,4,,BSC P223 LEC MWF 09:00AM 09:55AM&#13;&#10;CS 370 01,Database Mgmt. Systems,&quot;Rhodes,L&quot;,N,,3,,BSC C102 LEC MWF 08:00AM 08:55AM&#13;&#10;EB 105 01,Int. Economic Issues,&quot;Andrew,B&quot;,S,,3,,GOOD 400 LEC MWF 08:00AM 08:55AM&#13;&#10;ED 110 01,Foundations of Education,&quot;Byron,M&quot;,S,,3,,GOOD 322 LEC MWF 08:00AM 08:55AM&#13;&#10;ED 300 03,Is: E.C.E. Issues,&quot;DeHaas,S&quot;,S,,1,,GOOD 302 LEC T 08:00AM 08:50AM&#13;&#10;ED 430 01,Language and Literacy II,&quot;Park,V&quot;,S,CW,3,,GOOD 300 LEC TTH 08:00AM 09:20AM&#13;&#10;EN 110 01,College Writing Seminar,&quot;Hochberg,M&quot;,,C,4,,GOOD 221 LEC MWF 08:00AM 08:55AM&#13;&#10;EN 110 02,College Writing Seminar,&quot;Mathur,A&quot;,,C,4,,GOOD 314 LEC MWF 10:00AM 10:55AM&#13;&#10;EN 110 03,College Writing Seminar,&quot;Goldstein,P&quot;,,C,4,,GOOD 216 LEC MWF 09:00AM 09:55AM&#13;&#10;EN 110 04,College Writing Seminar,&quot;Mathur,A&quot;,,C,4,,GOOD 204 LEC MWF 09:00AM 09:55AM&#13;&#10;EN 110 05,College Writing Seminar,&quot;Clarkson,S&quot;,,C,4,,GOOD 216 LEC MWF 01:00PM 01:55PM&#13;&#10;EN 110 10,College Writing Seminar,&quot;Parvin,K&quot;,,C,4,,HUM 102 LEC MWF 01:00PM 01:55PM&#13;&#10;EN 110 11,College Writing Seminar,&quot;Lewis,J&quot;,,C,4,,HUM 102 LEC MWF 11:00AM 11:55AM&#13;&#10;EN 110 13,College Writing Seminar,&quot;Clarkson,K&quot;,,C,4,,GOOD 204 LEC TTH 09:00AM 10:20AM&#13;&#10;EN 110 14,College Writing Seminar,&quot;Staff, En.,&quot;,,C,4,,HUM 102 LEC TTH 09:00AM 10:20AM&#13;&#10;EN 110 15,College Writing Seminar,&quot;Katz,J&quot;,,C,4,,HUM 102 LEC TTH 10:30AM 11:50AM&#13;&#10;EN 110 19,College Writing Seminar,&quot;Peters,C&quot;,,C,4,,HUM 103 LEC TTH 01:00PM 02:20PM&#13;&#10;EN 110 21,College Writing Seminar,&quot;Wityk,M&quot;,,C,4,,BSC B305 LEC MWF 08:00AM 08:55AM&#13;&#10;ESL 200 01,Am:Nation of Immigrants,&quot;Ingerman,P&quot;,H,,3,,CH 01 LEC MWF 08:00AM 09:55AM&#13;&#10;ESS 299 01,St: Infect. Disease&amp;soc.,&quot;Martin,P&quot;,N,,3,,BSC B200 LEC MWF 08:00AM 08:55AM&#13;&#10;"
+v:shapes="_x0000_s1055"> </p>
+  <p>Here is a file in MS Excel.</p>
+  <p> <img border=0 width=576 height=312
+src="http://projects.juniata.edu/it110/images/db_022.jpg" v:shapes="_x0000_i1032"> <br>
+    <br>
+  </p>
+  <p>Another type of structure is called HIERARCHICAL or a tree structure.  In 
+    this case, the data are order into categories and then sub categories etc—pretty 
+    much they are like a well organized directory structure.  The data appears 
+    (at least) conceptually) as a tree.  Consider this model for use in managing 
+    classes.  A faculty member may have a “project” database that lists all classes 
+    that he/she teaches.  In each of those classes there are many students.  This 
+    looks like this:</p>
+  <p> <img border=0 width=441 height=300
+src="http://projects.juniata.edu/it110/images/db_016.png" v:shapes="_x0000_i1034"> </p>
+  <p>Another model would be the NETWORK mode, which is a slightly more complicated 
+    tree model.  The network model allows for many-to-many relationship.  Let’s 
+    continue to use the faculty example.  Consider the case when 2 (or more) faculty 
+    team <span class=GramE>teach</span> a course.  It may appear like this:</p>
+  <p> <img border=0 width=441 height=300
+src="http://projects.juniata.edu/it110/images/db_019.gif" v:shapes="_x0000_i1035"> </p>
+  <p>In the network model, you can see that 2 courses (Class 2 and 3) belong to 
+    2 different <span class=GramE>faculty</span> – hence the many-to-many relationship!</p>
+  <p>Each of these methods has one or more limitations.  Among the most obvious 
+    limitations is the need for redundant data.  Consider the case, where a student 
+    is in all three classes!  This would require that the student be a “record” 
+    in each of the class tables.  This leads us to relational databases or relational 
+    models.  Relational database models are the most popular models in use today.  
+    The data in this type of structure are arranged in 2-dimensional tables.  
+    We say 2-dimensional because each table is related to another table by some 
+    common element or field.  Let’s look at the relational database model for 
+    our team teaching faculty.  In this model – the relationships are best described 
+    in tabular format.</p>
+  <p><b>Faculty</b><b> Table</b></p>
+  <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0>
+    <tr> 
+      <td width=197 valign=top class="Normal"> <p><span style='color:red'>SSN</span></p></td>
+      <td width=197 valign=top class="Normal"> <p><span style='color:blue'>Name</span></p></td>
+      <td width=197 valign=top class="Normal"> <p><span style='color:blue'>ID#</span></p></td>
+      <td width=197 valign=top class="Normal"> <p>Dept ID</p></td>
+    </tr>
+    <tr> 
+      <td width=197 valign=top class="Normal"> <p><span
+   style='color:red'>001-10-0001</span></p></td>
+      <td width=197 valign=top class="Normal"> <p><span style='color:blue'>Faculty</span><span
+  style='color:blue'> A</span></p></td>
+      <td width=197 valign=top class="Normal"> <p><span style='color:blue'>43856</span></p></td>
+      <td width=197 valign=top class="Normal"> <p>112</p></td>
+    </tr>
+    <tr> 
+      <td width=197 valign=top class="Normal"> <p><span
+   style='color:red'>001-10-0002</span></p></td>
+      <td width=197 valign=top class="Normal"> <p><span style='color:blue'>Faculty</span><span
+  style='color:blue'> B</span></p></td>
+      <td width=197 valign=top class="Normal"> <p><span style='color:blue'>12135</span></p></td>
+      <td width=197 valign=top class="Normal"> <p>137</p></td>
+    </tr>
+  </table>
+  <p><b>Classes</b></p>
+  <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0>
+    <tr> 
+      <td width=148 valign=top class="Normal"> <p><span style='color:red'>ID#</span></p></td>
+      <td width=148 valign=top class="Normal"> <p><span style='color:blue'>Description</span></p></td>
+      <td width=148 valign=top class="Normal"> <p><span style='color:blue'>Dept 
+          Code</span></p></td>
+      <td width=148 valign=top class="Normal"> <p>Faculty 1</p></td>
+      <td width=148 valign=top class="Normal"> <p>Faculty 2</p></td>
+    </tr>
+    <tr> 
+      <td width=148 valign=top class="Normal"> <p><span style='color:red'>1011</span></p></td>
+      <td width=148 valign=top class="Normal"> <p><span style='color:blue'>Class 
+          1</span></p></td>
+      <td width=148 valign=top class="Normal"> <p><span style='color:blue'>ABE110</span></p></td>
+      <td width=148 valign=top class="Normal"> <p>43856</p></td>
+      <td width=148 valign=top class="Normal"> <p>NULL</p></td>
+    </tr>
+    <tr> 
+      <td width=148 valign=top class="Normal"> <p><span style='color:red'>1026</span></p></td>
+      <td width=148 valign=top class="Normal"> <p><span style='color:blue'>Class 
+          2</span></p></td>
+      <td width=148 valign=top class="Normal"> <p><span style='color:blue'>IT190</span></p></td>
+      <td width=148 valign=top class="Normal"> <p>43856</p></td>
+      <td width=148 valign=top class="Normal"> <p>12135</p></td>
+    </tr>
+    <tr> 
+      <td width=148 valign=top class="Normal"> <p><span style='color:red'>1356</span></p></td>
+      <td width=148 valign=top class="Normal"> <p><span style='color:blue'>Class 
+          3</span></p></td>
+      <td width=148 valign=top class="Normal"> <p><span style='color:blue'>HI390</span></p></td>
+      <td width=148 valign=top class="Normal"> <p>43856</p></td>
+      <td width=148 valign=top class="Normal"> <p>12135</p></td>
+    </tr>
+  </table>
+  <p><b>Students (only partially filled out for demonstration purposes)</b></p>
+  <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0>
+    <tr> 
+      <td width=118 valign=top class="Normal"> <p><span style='color:red'>ID#</span></p></td>
+      <td width=118 valign=top class="Normal"> <p><span style='color:blue'>Name</span></p></td>
+      <td width=118 valign=top class="Normal"> <p><span style='color:blue'>Address</span></p></td>
+      <td width=118 valign=top class="Normal"> <p>Home Phone</p></td>
+      <td width=118 valign=top class="Normal"> <p>Class I</p></td>
+      <td width=118 valign=top class="Normal"> <p>Class II</p></td>
+      <td width=118 valign=top class="Normal"> <p>Class II</p></td>
+    </tr>
+    <tr> 
+      <td width=118 valign=top class="Normal"> <p><span style='color:red'>13456</span></p></td>
+      <td width=118 valign=top class="Normal"> <p><span style='color:blue'>Student 
+          1</span></p></td>
+      <td width=118 valign=top class="Normal"> <p><span style='color:blue'>115 
+          Smith St.</span><span style='color:blue'> Anywhere </span><st1:country-region><span style='color:blue'>USA</span></st1:country-region></p></td>
+      <td width=118 valign=top class="Normal">&nbsp; </td>
+      <td width=118 valign=top class="Normal"> <p>1356</p></td>
+      <td width=118 valign=top class="Normal"> <p>1026</p></td>
+      <td width=118 valign=top class="Normal"> <p>1011</p></td>
+    </tr>
+    <tr> 
+      <td width=118 valign=top class="Normal"> <p><span style='color:red'>17654</span></p></td>
+      <td width=118 valign=top class="Normal"> <p><span style='color:blue'>Student 
+          2</span></p></td>
+      <td width=118 valign=top class="Normal"> <p><span style='color:blue'>109 
+          <span class=SpellE>Smallville</span> Somewhere </span><st1:country-region><span style='color:blue'>USA</span></st1:country-region></p></td>
+      <td width=118 valign=top class="Normal">&nbsp; </td>
+      <td width=118 valign=top class="Normal"> <p>1356</p></td>
+      <td width=118 valign=top class="Normal"> <p>1011</p></td>
+      <td width=118 valign=top class="Normal"> <p>1456</p></td>
+    </tr>
+    <tr> 
+      <td width=118 valign=top class="Normal"> <p><span style='color:red'>32451</span></p></td>
+      <td width=118 valign=top class="Normal"> <p><span style='color:blue'>Student 
+          3</span></p></td>
+      <td width=118 valign=top class="Normal"> <p><span style='color:blue'>Etc….</span></p></td>
+      <td width=118 valign=top class="Normal">&nbsp; </td>
+      <td width=118 valign=top class="Normal"> <p>1026</p></td>
+      <td width=118 valign=top class="Normal"> <p>1011</p></td>
+      <td width=118 valign=top class="Normal"> <p>…..</p></td>
+    </tr>
+    <tr> 
+      <td width=118 valign=top class="Normal"> <p><span style='color:red'>23579</span></p></td>
+      <td width=118 valign=top class="Normal"> <p><span style='color:blue'>Student 
+          4</span></p></td>
+      <td width=118 valign=top class="Normal"> <p><span style='color:blue'>Etc….</span></p></td>
+      <td width=118 valign=top class="Normal">&nbsp; </td>
+      <td width=118 valign=top class="Normal"> <p>1356</p></td>
+      <td width=118 valign=top class="Normal"> <p>…..</p></td>
+      <td width=118 valign=top class="Normal"> <p>…..</p></td>
+    </tr>
+    <tr> 
+      <td width=118 valign=top class="Normal"> <p><span style='color:red'>54734</span></p></td>
+      <td width=118 valign=top class="Normal"> <p><span style='color:blue'>Student 
+          5</span></p></td>
+      <td width=118 valign=top class="Normal"> <p><span style='color:blue'>Etc….</span></p></td>
+      <td width=118 valign=top class="Normal">&nbsp; </td>
+      <td width=118 valign=top class="Normal"> <p>1356</p></td>
+      <td width=118 valign=top class="Normal">&nbsp; </td>
+      <td width=118 valign=top class="Normal">&nbsp; </td>
+    </tr>
+    <tr> 
+      <td width=118 valign=top class="Normal"> <p><span style='color:red'>32456</span></p></td>
+      <td width=118 valign=top class="Normal"> <p><span style='color:blue'>Student 
+          6</span></p></td>
+      <td width=118 valign=top class="Normal"> <p><span style='color:blue'>Etc….</span></p></td>
+      <td width=118 valign=top class="Normal">&nbsp; </td>
+      <td width=118 valign=top class="Normal"> <p>1356</p></td>
+      <td width=118 valign=top class="Normal">&nbsp; </td>
+      <td width=118 valign=top class="Normal">&nbsp; </td>
+    </tr>
+    <tr> 
+      <td width=118 valign=top class="Normal"> <p><span style='color:red'>32453</span></p></td>
+      <td width=118 valign=top class="Normal"> <p><span style='color:blue'>Student 
+          7</span></p></td>
+      <td width=118 valign=top class="Normal"> <p><span style='color:blue'>Etc….</span></p></td>
+      <td width=118 valign=top class="Normal">&nbsp; </td>
+      <td width=118 valign=top class="Normal">&nbsp; </td>
+      <td width=118 valign=top class="Normal">&nbsp; </td>
+      <td width=118 valign=top class="Normal">&nbsp; </td>
+    </tr>
+    <tr> 
+      <td width=118 valign=top class="Normal"> <p><span style='color:red'>32456</span></p></td>
+      <td width=118 valign=top class="Normal"> <p><span style='color:blue'>Student 
+          8</span></p></td>
+      <td width=118 valign=top class="Normal"> <p><span style='color:blue'>Etc….</span></p></td>
+      <td width=118 valign=top class="Normal">&nbsp; </td>
+      <td width=118 valign=top class="Normal">&nbsp; </td>
+      <td width=118 valign=top class="Normal">&nbsp; </td>
+      <td width=118 valign=top class="Normal">&nbsp; </td>
+    </tr>
+    <tr> 
+      <td width=118 valign=top class="Normal"> <p><span style='color:red'>76890</span></p></td>
+      <td width=118 valign=top class="Normal"> <p><span style='color:blue'>Student 
+          9</span></p></td>
+      <td width=118 valign=top class="Normal"> <p><span style='color:blue'>Etc….</span></p></td>
+      <td width=118 valign=top class="Normal">&nbsp; </td>
+      <td width=118 valign=top class="Normal">&nbsp; </td>
+      <td width=118 valign=top class="Normal">&nbsp; </td>
+      <td width=118 valign=top class="Normal">&nbsp; </td>
+    </tr>
+  </table>
+  <p>Do you see how the tables relate?  In each record of the table there is an 
+    identifiable element or piece of data that relates back to another table.  
+    That relationship is the <b><i>KEY</i></b>.  In a relational database, one 
+    of the most important elements is the concept of a key.  A key or field (a 
+    key can also be a set of fields) within a record that can identify that record.  
+    In the relational database example above, the Keys are in blue.  These key 
+    fields identify the record.  There is also a field in red.  This is known 
+    as the <b>primary key</b>.  The primary key uniquely identifies the record.  
+    No other record can have the same primary key.</p>
+  <p>This is a very basic overview of databases and relational databases.  In 
+    addition to the models just described, there are some other types of databases 
+    that are worth noting.</p>
+  <p><b>Object oriented:</b> Allow the use of objects such as movies or documents 
+    or what have you.</p>
+  <p><b>Object Relational: </b> Same as <span class=GramE>relational,</span> but 
+    allow for the use of objects.</p>
+  <p><span class=GramE><b>HDF/CDF</b>—mostly used for images.</span></p>
+  <p>Here is an interesting outline and overview of additional database information.</p>
+  <hr>
+  <p>&nbsp;</p>
+  <p> <b>Text types:</b></p>
+  <p> - <span class=SpellE><b>Flatfile</b></span>: text, binary, essentially a 
+    big table</p>
+  <p> <span style='"Times New Roman"'>---</span>identifier separated (delimited) 
+    CSV, TAB, .txt</p>
+  <p> <span style='"Times New Roman"'>---</span>Structured or fixed format: every 
+    piece of information is in exactly the same place on every line in the file 
+    (or if there are multiple lines then in the same place in the same order). 
+  </p>
+  <p> <b>Document:</b>   These are for the most part “data”, but the structure 
+    is not tabular or matrix like as in the standard <span class=SpellE>flatfile</span>.  
+    Instead these data type may be different for every file, but they have some 
+    common identifiers that allow the user to find the necessary information in 
+    the file.  The early and still widely used protein databank files have a certain 
+    format that makes it possible to write programs to pull the data out and reformat 
+    it for easier use</p>
+  <p> ASCII</p>
+  <p> Word</p>
+  <p> BIO databases</p>
+  <p> FASTA</p>
+  <p> GENBANK</p>
+  <p> <span style='"Times New Roman"'><span style='font:7.0pt "Times New Roman"'> 
+    </span></span> Protein Bank etc</p>
+  <p> <b>Spreadsheets:</b> Spreadsheets are programs that combine the tables of 
+    a database with lots of functions—mathematical, text, and query to allow everything 
+    from very simple analyses such as addition to very complex analysis such as 
+    optimal control (rocket science), and just about everything in between. We 
+    will do more than a few <span class=SpellE>excellercises</span> that will 
+    show you some of the capabilities of spreadsheets.  There are hundreds maybe 
+    thousands of spreadsheet programs out there, but the most common are:</p>
+  <p> <span lang=ES-MX>Excel: </span><a href="http://www.microsoft.com/office/excel/default.asp"><span
+lang=ES-MX>http://www.microsoft.com/office/excel/default.asp</span></a> </p>
+  <p> <span lang=IT>Quattro:  <a
+href="http://www.corel.com/servlet/Satellite?pagename=Corel/Products/productInfo&amp;id=1047021820878&amp;content=FAQ#1">http://www.corel.com/servlet/Satellite?pagename=Corel/Products/productInfo&amp;id=1047021820878&amp;content=FAQ#1</a> 
+    </span></p>
+  <p> <span lang=FI>Lotus: <a href="http://www.lotus.com/products/smrtsuite.nsf/wPages/123">http://www.lotus.com/products/smrtsuite.nsf/wPages/123</a> 
+    </span></p>
+  <p> <span
+style='"Times New Roman"'><span style='font:7.0pt "Times New Roman"'> </span></span> 
+    <span class=SpellE>Gnumeric</span>: <a
+href="http://www.gnome.org/projects/gnumeric/index.shtml">http://www.gnome.org/projects/gnumeric/index.shtml</a> 
+  </p>
+  <p> <span
+style='"Times New Roman"'><span style='font:7.0pt "Times New Roman"'> </span></span> 
+    Open Office: <a
+href="http://www.openoffice.org/dev_docs/source/features.html#calc">http://www.openoffice.org/dev_docs/source/features.html#calc</a> 
+  </p>
+  <p> <b>Standalone Relational Databases Suites: </b>Standalone database suites 
+    are similar to spreadsheets in that they store tables of data, but they differ 
+    substantially in the complexity of the relationship between the data in the 
+    tables, the capacity for building data entry forms and the ease and power 
+    of querying and searching the tables in the data.<b> </b></p>
+  <p> Dbase/<span class=SpellE>Foxbase/Xbase</span>: <a
+href="http://www.dbase.com/mainpage.htm">http://www.dbase.com/mainpage.htm</a> 
+  </p>
+  <p> <span lang=IT>Access: </span><a href="http://www.microsoft.com/access/">http://www.microsoft.com/access/</a> 
+  </p>
+  <p> <span
+lang=PT><span style='font:7.0pt "Times New Roman"'> </span></span> <span lang=PT>Paradox: 
+    <a href="http://www.thedbcommunity.com/">http://www.thedbcommunity.com/</a> 
+    </span></p>
+  <p> <b><span
+style='"Times New Roman"'><span
+style='font:7.0pt "Times New Roman"'> </span></span></b> <b>Client Server Databases:</b></p>
+  <p> <span lang=SV>Interbase: </span><a href="http://www.borland.com/interbase/"><span lang=SV>http://www.borland.com/interbase/</span></a> 
+  </p>
+  <p> DB—II:  <a
+href="http://www-3.ibm.com/software/data/db2%20/">http://www-3.ibm.com/software/data/db2 
+    /</a> </p>
+  <p> <span lang=DA>MSSQL—sqlserver  <a href="http://www.microsoft.com/sql/">http://www.microsoft.com/sql/</a></span></p>
+  <p> <span lang=FR>Oracle: </span><a href="http://www.oracle.com/"><span lang=FR>http://www.oracle.com</span></a> 
+  </p>
+  <p> Sybase: <a href="http://mssql.com/">http://mssql.com</a> </p>
+  <p> <span lang=FR>Ingres<span
+class=GramE>:  </span></span><a
+href="http://www3.ca.com/Solutions/Product.asp?ID=1013"><span lang=FR>http://www3.ca.com/Solutions/Product.asp?ID=1013</span></a> 
+  </p>
+  <p> <span
+lang=FR><span style='font:7.0pt "Times New Roman"'> </span></span> <span class=SpellE><span lang=FR>Postgres</span></span><span lang=FR>&nbsp;: 
+    <a href="http://www.postgresql.org/">http://www.postgresql.org/</a> </span></p>
+  <p> <span
+lang=FR><span style='font:7.0pt "Times New Roman"'> </span></span> <span class=SpellE><span lang=FR>MySQL</span></span><span lang=FR>&nbsp;: 
+    <a href="http://www.mysql.org/">http://www.mysql.org</a> </span></p>
+  <p> <b>Scheme based Markup Languages that handle data:</b>  Not really a database, 
+    but rather a method of tagging (naming) objects in site, directory, collection 
+    of documents, or document and then finding those items quickly through a search 
+    front-end.   The idea was that by making data work in a tree-like structure 
+    getting to that data would be more natural to both users and programmers than 
+    common database structures that limit the creativity of human language <span
+class=GramE>an</span> thought. <br>
+    <a href="http://www.xml.com/pub/a/2000/08/holman/index.html">http://www.xml.com/pub/a/2000/08/holman/index.html</a> 
+    has a lot of information, but is pretty advanced. </p>
+  <p> XML: <a href="http://www.w3.org/XML/">http://www.w3.org/XML/</a>  or <a
+href="http://www.oasis-open.org/cover/xml.html">http://www.oasis-open.org/cover/xml.html</a> 
+  </p>
+  <p> <span lang=FR>SGML&nbsp;: </span></p>
+  <p> <span class=GramE><b>Statistical&nbsp;:</b></span><b>  </b>Many social science 
+    and economic datasets are stored in formats are usually pretty close to a 
+    flat file system.  They will have their own special metadata and documentation 
+    capabilities which are unique to that software.  Two <span class=GramE>of  
+    the</span> biggies in this files are SAS and SPSS.  If you plan on performing 
+    statistics being query, sort, and cross-tabulation, you will want to use a 
+    statistical package.  If you know that then you can save yourself many headaches 
+    by setting up your data entry and compilation in the statistical software 
+    you are going to use <span
+class=SpellE>fromt</span> eh beginning from the beginning.</p>
+  <p> <span lang=PT>SAS&nbsp;: <a href="http://www.sas.com/">http://www.sas.com</a> 
+    </span></p>
+  <p> <span
+lang=FR><span style='font:7.0pt "Times New Roman"'> </span></span> <span lang=FR>SPSS&nbsp;: 
+    <a href="http://www.spss.com/">http://www.spss.com</a> </span></p>
+  <p>Let’s look at an example of a database application.</p>
+  <br clear=all style='page-break-before:
+always'>
+  <p> <img width=619 height=1523
+src="http://projects.juniata.edu/it110/images/db_023.png"
+alt="Text Box: Webilates 1: Web databases:&#13;&#10;&#13;&#10;1.	go to &#13;&#10;http://www.fedstats.gov/toolkit.html  and pick the censtats database&#13;&#10;&#13;&#10;http://censtats.census.gov/ &#13;&#10;&#13;&#10;and then to international trade data and select IRAQ and click go.&#13;&#10;&#13;&#10;SITC	Desc	March,2003	Cumulative Year to Date through March, 2003&#13;&#10;		Exports	General Imports	 	Exports	General Imports	 &#13;&#10;		F.A.S. Value Basis	Customs Value Basis	C.I.F. Value Basis	F.A.S. Value Basis	Customs Value Basis	C.I.F. Value Basis&#13;&#10;2	Crude Materials, Inedible, Except Fuels	-	-	-	11	-	-&#13;&#10;3	Mineral Fuels, Lubricants And Related Materials	-	709,424	764,572	-	1,953,670	2,095,976&#13;&#10;5	Chemicals And Related Products, N.e.s.	-	-	-	-	-	-&#13;&#10;7	Machinery And Transport Equipment	-	-	-	24	-	-&#13;&#10;8	Miscellaneous Manufactured Articles	17	-	-	488	-	-&#13;&#10; 	Total	17	709,424	764,572	524	1,953,670	2,095,976&#13;&#10;2.	Notice at the bottom of the page there was an option to export that table as a text or csv (comma separated value file)&#13;&#10; &#13;&#10;3.	Click on see what happens.&#13;&#10;4.	Open the file that you saved from excel.&#13;&#10;5.	Go back to the web page and look at some of the other statistics.&#13;&#10;&#13;&#10;Iraq (5050) &#13;&#10;SITCCODE - 3 &#13;&#10;Mineral Fuels, Lubricants And Related Materials&#13;&#10;&#13;&#10;Month	2003	2002	2001&#13;&#10;	Exports	General Imports	Exports	General Imports 	Exports	General Imports&#13;&#10;	F.A.S. Value Basis	Customs Value Basis	C.I.F. Value Basis	F.A.S. Value Basis	Customs Value Basis	C.I.F. Value Basis	F.A.S. Value Basis	Customs Value Basis	C.I.F. Value Basis&#13;&#10;January	-	468,429	498,911	-	569,120	607,925	-	305,574	341,868&#13;&#10;February	-	775,816	832,493	-	407,669	427,135	-	212,676	234,529&#13;&#10;March	-	709,424	764,572	-	364,549	386,605	-	364,778	400,952&#13;&#10;April	-	-	-	-	574,040	609,690	-	555,751	616,320&#13;&#10;May	-	-	-	-	275,336	289,864	-	580,148	638,584&#13;&#10;June	-	-	-	-	144,461	151,714	-	571,110	619,352&#13;&#10;July	-	-	-	-	201,759	213,357	-	459,664	500,256&#13;&#10;August	-	-	-	-	185,892	193,988	-	398,940	425,529&#13;&#10;September	-	-	-	-	133,126	139,652	-	646,079	685,808&#13;&#10;October	-	-	-	-	157,103	164,044	-	764,460	814,535&#13;&#10;November	-	-	-	-	232,495	244,769	-	402,240	435,182&#13;&#10;December	-	-	-	-	347,221	369,295	-	539,145	584,740&#13;&#10;Year to Date	-	1,953,670	2,095,976	-	3,592,771	3,798,038	-	5,800,564	6,297,654&#13;&#10;[In Thousands of Dollars.(-) represents zero.(Z)-represents less than 0.05.]&#13;&#10;&#13;&#10;HMMM so 6 billion a year under the former Baath regime—surprised?&#13;&#10;6.	Now go back and find another database and impress us with some other fact we need to know.&#13;&#10;7.	Post it in the collaboratory.&#13;&#10;&#13;&#10;"
+v:shapes="_x0000_s1050"> <br>
+    <br>
+    <br>
+  </p>
+  <p><b>Queries (Questions to the database)</b></p>
+  <p>An electronic database is pretty useless if you cannot get the information 
+    back out.  In MS Excel you can manually go through and select the rows that 
+    you want and erase the rest.  That would be a manual query.  It would be better 
+    if you could just write short statement that said:<br>
+    <br>
+              “go get me the rows that have four units in them and save that to 
+    a new table. “<br>
+    <br>
+    …….This is exactly the point of a query language.</p>
+  <p>Most of the search engines that you use are simply a “web front end” that 
+    writes a query statement to a database.  <span class=SpellE>Google</span> 
+    essentially says go to the database and find the URL’s that have the keywords 
+    that match the ones you typed in.</p>
+  <p><b>SQL—Structured Query Language</b></p>
+  <p>Many of the standard databases use a standardized language called SQL for 
+    doing the filters.  SQL is an interesting language.  When you see a simple 
+    or basic SQL statement or query, you would probably think “yeah that makes 
+    sense”.  It is a very common sense oriented language that uses everyday thinking 
+    and commands, although remembering the exact syntax (format for the command) 
+    can be a little tricky.  Here is an example of a basic SQL command:</p>
+  <p><span style='color:#0000BB'>SELECT ID, NAME FROM FACULTY</span></p>
+  <p>This would essentially </p>
+  <p>If you want, there is a lot more information on <span
+class=SpellE>sql</span> in the <span class=SpellE>sql</span> tutorials in the 
+    “going further” section—for now do <span class=SpellE>excelercise</span> #2<br>
+    <br>
+    <img
+src="http://projects.juniata.edu/it110/images/db_013.png"
+alt="Text Box: Example of a query or filter:&#13;&#10;&#13;&#10;1.	open the 8am classes excel sheet – get it here&#13;&#10;2.	select all the records with data&#13;&#10;3.	go to DATAàfilteràautomatic filter&#13;&#10;4.	the top row will now look like:&#13;&#10; &#13;&#10;5.	No click on the down arrow by credits and click on 4.&#13;&#10; &#13;&#10;6.	Neat eh? Now try filtering (querying) so the division is C.&#13;&#10;" width=571 height=580 border="0" usemap="#Map2"
+v:shapes="_x0000_s1026"> 
+    <map name="Map2">
+      <area shape="rect" coords="282,41,359,69" href="/8amclasses.xls">
+    </map>
+    <br>
+    <br>
+  </p>
+  <p>Here’s another exercise.  This one lets you connect Excel to another database 
+    (a MS Access file).</p>
+  <p><b>  </b> <b> <img
+src="http://projects.juniata.edu/it110/images/db_017.png"
+alt="Text Box: Excelercise 2: Structured Query Language example in excel&#13;&#10;&#13;&#10;1.	Go to TOOLSàAdd-Ins&#13;&#10; &#13;&#10;If the ODBC Add-in is checked, you are good to go (Skip step 2). If it is not checked, check it and click O.K (Skip step 2)...  If it is not there, you will have to add it.&#13;&#10;&#13;&#10;&#13;&#10;2.	Installing the OBCD Add-in:&#13;&#10;a.	Right click on the ADD-IN LINK (HERE).&#13;&#10;b.	Save the file to a directory you have access to on your hard drive.&#13;&#10;c.	Go to the xlobcd.exe in explore and double-click it.&#13;&#10;d.	Click finish when it is done.&#13;&#10;e.	Restart excel and go back to step 1.&#13;&#10;3.	Right Click on the USING SQL REQUEST.zip and save it to your working directory. Uzip both files to your working directory (Note the excel file was originally written by andy wiggins, I have modified it for our purposes.)&#13;&#10;4.	Open the file in excel &#13;&#10;5.	Go to the Acessdatabase tab:  This is a sheet with an example that uses SQL statements to open and access database and pull some selected values out of it.&#13;&#10;a.	Change all references from c:\bioinfo\courses\pelkey\   to  the directory where you saved the mdb file from the zip in step 3.&#13;&#10;b.	Now follow the suggestions in the yellow box on the excel sheet to change the results&#13;&#10;6.	Go to the closed excel sheet tab: This shows how to use SQL statements to get data from closed excel sheets. &#13;&#10;a.	Either create the test databases as suggested in the workbook, or use the ones provided in the zip file above&#13;&#10;b.	Now follow the suggestions on the worksheet.&#13;&#10;c.	Change the direction of the &gt;= criteria.&#13;&#10;d.	Pay attention to the formula being used for the SQL&#13;&#10;&#13;&#10;" width=559 height=833 border="0" usemap="#Map"
+v:shapes="_x0000_s1032"> 
+    <map name="Map">
+      <area shape="rect" coords="160,606,319,621" href="file:///V|/dbsql.zip">
+      <area shape="rect" coords="207,530,343,543" href="file:///V|/xlodbc.exe">
+    </map>
+    </b> <br>
+    <br>
+  </p>
+  <p><b>Where could I learn more about and databases?</b></p>
+  <ol start=1 type=1>
+    <li>Dr. Thomas’ databases course</li>
+    <li>Dr. Weaver’s MIS course</li>
+    <li>The tutorials with the software</li>
+  </ol>
+  <p>That’s about it for the basic readings pertaining to databases.  Your individual 
+    instructors will provide additional instruction based on one or more database 
+    management software packages.</p>
+</div>
+</body>
+</html>

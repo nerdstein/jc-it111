@@ -1,0 +1,1011 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<STYLE>
+<!--
+A.ssmItems:link		{color:black;text-decoration:none;}
+A.ssmItems:hover	{color:black;text-decoration:none;}
+A.ssmItems:active	{color:black;text-decoration:none;}
+A.ssmItems:visited	{color:black;text-decoration:none;}
+//-->
+</STYLE>
+
+<SCRIPT SRC="ssm.js" language="JavaScript1.2">
+
+//Dynamic-FX slide in menu v6.5 (By maXimus, maximus@nsimail.com)
+//Site: http://maximus.ravecore.com/
+//For full source, and 100's more DHTML scripts, visit http://www.dynamicdrive.com
+
+</SCRIPT>
+
+<SCRIPT SRC="ssmItems.js" language="JavaScript1.2"></SCRIPT>
+
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('/images/hover_example_down.gif')">
+<table width="695" border="0" cellpadding="0" cellspacing="0">
+  <!--DWLayoutTable-->
+  <tr> 
+    <td width="44" height="573" valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
+    <td width="669"><div class=Section1> 
+        <p><font size="6" face="Times New Roman, Times, serif"><span style='font-family:Arial'>WEB 
+          DEVELOPMENT</span></font></p>
+        <p><font face="Times New Roman, Times, serif"><span style='font-size:10.0pt;font-family:Arial'>We 
+          have covered the web in some detail, but now what?&nbsp; How do we develop 
+          for the <span
+class=GramE>web.</span>&nbsp; Well, as expected there are hundred of sites on 
+          web development. See:</span></font></p>
+        <p><font face="Times New Roman, Times, serif"><span style='font-size:10.0pt;font-family:Arial'><a
+href="http://www.december.com/web/develop.html">http://www.december.com/web/develop.html</a></span></font></p>
+        <p><font face="Times New Roman, Times, serif"><span class=GramE><span style='font-size:10.0pt;font-family:
+Arial'>for</span></span><span style='font-size:10.0pt;font-family:Arial'> a simple 
+          example. Or for a more complete source:</span></font></p>
+        <p><font face="Times New Roman, Times, serif"><span style='font-size:10.0pt;font-family:Arial'><a
+href="http://www.devshed.com/">http://www.devshed.com/</a></span></font></p>
+        <p><font face="Times New Roman, Times, serif"><span class=GramE style="font-family: Arial; font-size: 10.0pt;">ANotehr 
+          popular site is </span><span style='font-size:10.0pt;font-family:Arial'><span class=SpellE>webmonkey 
+          </span><a href="http://hotwired.lycos.com/webmonkey">http://hotwired.lycos.com/webmonkey</a> 
+          </span><span class=GramE><span style='font-size:10.0pt;font-family:
+Arial'>because</span></span><span style='font-size:10.0pt;font-family:Arial'> 
+          it has extensive how-to documents and language reference manuals.</span></font></p>
+        <p><font face="Times New Roman, Times, serif"><span style='font-size:10.0pt;font-family:Arial'>You 
+          really can learn nearly all of it at <span class=SpellE>webmonkey</span>. 
+          Note that macromedia (as in Dreamweaver) also has some really nice material:&nbsp;</span></font></p>
+        <p><font face="Times New Roman, Times, serif"><span style='font-size:10.0pt;font-family:Arial'><a
+href="http://www.macromedia.com/devnet/mx/dreamweaver/articles/css_practices.html">http://www.macromedia.com/devnet/mx/dreamweaver/articles/css_practices.html</a></span></font></p>
+        <p><font face="Times New Roman, Times, serif"><span style='font-size:10.0pt;font-family:Arial'>As 
+          one Juniata faculty noted, it doesn’t matter how you create a web page 
+          but rather what it looks like when you’re done.  Okay, we’ll focus on 
+          design issues, but first let’s look at our options for development.  
+          In addition to the nifty <span class=SpellE><span class=GramE>url’s</span></span> 
+          above, we’ll provide you with overviews of “how to” develop web sites 
+          using HTML, JavaScript, PowerPoint, and <span class=SpellE>DreamWeaver</span>.  
+          You can then take your pick or even go elsewhere.  For example, you 
+          can always download HTML Kit from <a href="http://www.chami.com/html-kit/">http://www.chami.com/html-kit/</a> 
+          and proceed to use HTML with the help of debugging and on-line help 
+          or you can download templates from <span class=SpellE>DreamWeaver</span> 
+          from <a href="http://www.macromedia.com/software/dreamweaver/download/templates/">http://www.macromedia.com/software/dreamweaver/download/templates</a></span><span class=GramE><span style='font-size:10.0pt;font-family:
+Arial'> and</span></span><span style='font-size:10.0pt;font-family:Arial'> edit 
+          them (life is a lot easier if someone else has done the programming.)</span></font></p>
+        <p>&nbsp;</p>
+        <p><font size="6" face="Times New Roman, Times, serif"><strong>HTML and 
+          Beyond</strong></font></p>
+        <p><font face="Times New Roman, Times, serif"><span class=SpellE>HyperText</span> 
+          Markup Language (HTML) is the language of the internet, more <span class=GramE>specifically,</span> 
+          it is a hypermedia document description language that is used to publish 
+          documents on the World Wide Web.  HTML files are in an ASCII format, 
+          meaning that you can use any old text editor to create an HTML file.  
+          Simply use a text editor such as Notepad to create or edit HTML.  Save 
+          the file with an HTML file extension.  Then, examine the file with a 
+          browser such as Internet Explorer or Netscape.  Transfer the file to 
+          your web space (i.e. your website directory) and then use the browser 
+          to examine the page on its web space.  </font></p>
+        <p><font face="Times New Roman, Times, serif">Here is a simple HTML file:</font></p>
+        <p><font face="Times New Roman, Times, serif">&lt;<span class=GramE>html</span>&gt;<br>
+          </font><font face="Times New Roman, Times, serif">&lt;head&gt;<br>
+          </font><font face="Times New Roman, Times, serif">&lt;title&gt;<br>
+          </font><font face="Times New Roman, Times, serif">This is a Simple HTML 
+          Page.<br>
+          </font><font face="Times New Roman, Times, serif">&lt;/title&gt;<br>
+          </font><font face="Times New Roman, Times, serif">&lt;h1&gt;<br>
+          </font><font face="Times New Roman, Times, serif">This is what h1 looks 
+          like.<br>
+          </font><font face="Times New Roman, Times, serif">&lt;/h1&gt;<br>
+          </font><font face="Times New Roman, Times, serif">&lt;/head&gt;<br>
+          </font><font face="Times New Roman, Times, serif">&lt;body&gt;<br>
+          </font><font face="Times New Roman, Times, serif">The body is the section 
+          where the text and graphics appears.  This is a simple page so we’ll 
+          start with text only. <br>
+          </font><font face="Times New Roman, Times, serif">&lt;p&gt;<br>
+          </font><font face="Times New Roman, Times, serif">Here we will place 
+          a new paragraph.<br>
+          </font><font face="Times New Roman, Times, serif">&lt;/body&gt;<br>
+          </font><font face="Times New Roman, Times, serif">&lt;/html&gt;</font></p>
+        <p><font face="Times New Roman, Times, serif">If you haven’t written basic 
+          HTML files before, simply copy the above into an editor and save it 
+          as an HTML file.  Then open it in MS Internet Explorer. </font><font face="Times New Roman, Times, serif">An 
+          HTML file is composed of elements which represent various structures 
+          (such as a header), or a desired behavior (such as italic).  Most elements 
+          include a starting tag, content, and an ending tag.  </font><font face="Times New Roman, Times, serif">HTML 
+          markup tags consist of a left bracket (&lt;), followed by the tag name, 
+          and then a right <span class=SpellE>brackt</span> (&gt;).  Tags usually 
+          are in pairs whereby the first tag indicates the start of an element 
+          and the second tag preceded by a slash (/) indicates the end.  For example,</font></p>
+        <p><font face="Times New Roman, Times, serif">&lt;H1&gt;A Sample Web Page&lt;/H1&gt;<br>
+          </font><font face="Times New Roman, Times, serif">There are also certain 
+          HTML elements that do not hold any content.  These elements do not have 
+          any ending tags.  Examples include a horizontal rule (&lt;HR&gt;) and 
+          a line break (&lt;BR&gt;).</font><font face="Times New Roman, Times, serif">Certain 
+          browsers may interpret certain commands differently or may not recognize 
+          certain commands.  For now, we’ll cover HTML coding for most web browsers.  
+          So, here are a few universal HTML commands.</font></p>
+        <p><font face="Times New Roman, Times, serif">-  HTML identification &lt;html&gt; 
+          &lt;/html&gt; identifies the beginning and end of your HTML </font><font face="Times New Roman, Times, serif">code.</font></p>
+        <p><font face="Times New Roman, Times, serif">-  Header name &lt;head&gt; 
+          provides the header information for the page.</font></p>
+        <p><font face="Times New Roman, Times, serif">-  Title page &lt;title&gt; 
+          &lt;/title&gt; specifies the title to be placed at the top of the browser 
+          window when the page appears.</font></p>
+        <p><font face="Times New Roman, Times, serif">-  Headings &lt;h1&gt; &lt;/h1&gt;, 
+          &lt;h2&gt; &lt;/h2&gt; etc through &lt;h6&gt; &lt;/h6&gt; (capitalization 
+          is irrelevant)</font></p>
+        <p><font face="Times New Roman, Times, serif">-  Paragraphs &lt;p&gt; 
+          &lt;/p&gt;</font></p>
+        <p><font face="Times New Roman, Times, serif">-  Horizontal Rules &lt;hr&gt;</font></p>
+        <p><font face="Times New Roman, Times, serif">-  Line Breaks &lt;<span
+class=SpellE>br</span>&gt;</font></p>
+        <p><font face="Times New Roman, Times, serif">-  Basic Text Styles &lt;b&gt; 
+          &lt;/b&gt; for bold; &lt;u&gt; &lt;/u&gt; for underline, &lt;I&gt; &lt;/I&gt; 
+          for italic and </font></p>
+        <p><font face="Times New Roman, Times, serif">&lt;<span class=SpellE>em</span>&gt; 
+          &lt;/<span class=SpellE>em</span>&gt; for emphasize</font></p>
+        <p><font face="Times New Roman, Times, serif">When you have more than 
+          one set of tags together, they must follow nesting rules.  In general, 
+          nesting rules tend to follow grammatical rules for brackets.  For example, 
+          </font><font face="Times New Roman, Times, serif">{( xyz)}is correct 
+          but {( }) is incorrect.  Likewise, &lt;b&gt; &lt;<span class=SpellE>i</span>&gt;This 
+          is bold and italic&lt;/<span class=SpellE>i</span>&gt; &lt;/b&gt; is 
+          correct but ending with the sequence &lt;/b&gt; &lt;/<span class=SpellE>i</span>&gt; 
+          is incorrect.  </font><font face="Times New Roman, Times, serif">Within 
+          an HTML document you can send the reader to another web page by using 
+          a hyper link.  An example follows: </font><font face="Times New Roman, Times, serif">&lt;p&gt; 
+          If you want to learn more about HTML you can check out an </font><font face="Times New Roman, Times, serif">&lt;a 
+          <span class=SpellE>href</span>=<a
+href="http://htmlgoodies.earthweb.com/">http://htmlgoodies.earthweb.com/</a>&gt;HTML 
+          tutorial&lt;/a&gt;.  There are several to choose from. </font><font face="Times New Roman, Times, serif">If 
+          you prefer to have the user click on an icon rather than the term HTML 
+          tutorial, you can provide an image for them to click on to get them 
+          to the web page.  An example follows:</font></p>
+        <p><font face="Times New Roman, Times, serif">&lt;a <span class=SpellE>href</span>=”home.html”&gt; 
+          </font><font face="Times New Roman, Times, serif">&lt;<span class=SpellE>img</span> 
+          <span class=SpellE>scr</span>=”<span
+class=SpellE>cabin.gif</span>” width=”50” </font><font face="Times New Roman, Times, serif">height=”55” 
+          alt=”cabin icon”&gt;</font><font face="Times New Roman, Times, serif">&lt;/a&gt;</font></p>
+        <p><font face="Times New Roman, Times, serif">Try putting the above options 
+          together in a web site that you can use!</font></p>
+        <p><font face="Times New Roman, Times, serif">Named anchors are similar 
+          to sending the user to a specific URL.  However, rather than redirecting 
+          them to another web page, you are simply directing them to a later section 
+          of your own web page.  See the following example:</font></p>
+        <p><font face="Times New Roman, Times, serif">&lt;html&gt;<br>
+          </font><font face="Times New Roman, Times, serif">&lt;head&gt;<br>
+          </font><font face="Times New Roman, Times, serif">&lt;title&gt; How 
+          to write HTML Code &lt;/title&gt;<br>
+          </font><font face="Times New Roman, Times, serif">&lt;/head&gt;<br>
+          </font><font face="Times New Roman, Times, serif">&lt;body&gt;<br>
+          </font><font face="Times New Roman, Times, serif">&lt;h1 align=”center”&gt; 
+          <br>
+          How to Write HTML Code<br>
+          &lt;/h1&gt;<br>
+          </font><font face="Times New Roman, Times, serif">&lt;p&gt; Putting 
+          a named link into your html</font><font face="Times New Roman, Times, serif"><span lang=IT>&lt;p&gt;</span></font><font face="Times New Roman, Times, serif"><span lang=IT>&lt;ul&gt;<br>
+          </span></font><font face="Times New Roman, Times, serif"><span lang=IT>&lt;li&gt; 
+          <br>
+          &lt;a href=&quot;#anchor&quot;&gt;hyperlink&lt;/a&gt;<br>
+          &lt;/li&gt;</span></font><font face="Times New Roman, Times, serif">&lt;/<span class=SpellE>ul</span>&gt;<br>
+          </font><font face="Times New Roman, Times, serif">&lt;p&gt; Here you 
+          can add a bunch of stuff and the user can review this </font><font face="Times New Roman, Times, serif">or 
+          simply click on the link which will send them to a named anchor.</font><font face="Times New Roman, Times, serif">&lt;p&gt; 
+          .<br>
+          </font><font face="Times New Roman, Times, serif">&lt;p&gt; .<br>
+          </font><font face="Times New Roman, Times, serif">&lt;p&gt; .<br>
+          </font><font face="Times New Roman, Times, serif">&lt;p&gt; .<br>
+          </font><font face="Times New Roman, Times, serif">&lt;p&gt; .<br>
+          </font><font face="Times New Roman, Times, serif">&lt;p&gt; .<br>
+          </font><font face="Times New Roman, Times, serif">&lt;p&gt; .<br>
+          </font><font face="Times New Roman, Times, serif">&lt;p&gt; .<br>
+          </font><font face="Times New Roman, Times, serif">&lt;p&gt; .<br>
+          </font><font face="Times New Roman, Times, serif">&lt;p&gt; .<br>
+          </font><font face="Times New Roman, Times, serif">&lt;p&gt; .<br>
+          </font><font face="Times New Roman, Times, serif">&lt;p&gt; .<br>
+          </font><font face="Times New Roman, Times, serif">&lt;p&gt; .<br>
+          </font><font face="Times New Roman, Times, serif"><span lang=PT>&lt;p&gt; 
+          .<br>
+          </span>&lt;p&gt; .<br>
+          </font><font face="Times New Roman, Times, serif">&lt;p&gt; .<br>
+          </font><font face="Times New Roman, Times, serif">&lt;p&gt; .<br>
+          </font><font face="Times New Roman, Times, serif">&lt;p&gt; .<br>
+          </font><font face="Times New Roman, Times, serif">&lt;p&gt; .<br>
+          </font><font face="Times New Roman, Times, serif">&lt;p&gt; .<br>
+          </font><font face="Times New Roman, Times, serif">&lt;p&gt; .<br>
+          </font><font face="Times New Roman, Times, serif">&lt;p&gt; .<br>
+          </font><font face="Times New Roman, Times, serif">&lt;p&gt; .<br>
+          </font><font face="Times New Roman, Times, serif">&lt;p&gt; .<br>
+          </font><font face="Times New Roman, Times, serif">&lt;p&gt; .</font><font face="Times New Roman, Times, serif"><span lang=PT> 
+          <br>
+          </span></font><font face="Times New Roman, Times, serif"><span lang=PT>&lt;h3&gt; 
+          &lt;a name=&quot;anchor&quot;&gt;hyperlink&lt;/a&gt;&lt;/h3&gt;<br>
+          </span></font><font face="Times New Roman, Times, serif"><span lang=ES>&lt;p&gt; 
+          Yada yada<br>
+          </span></font><font face="Times New Roman, Times, serif"><span lang=ES>&lt;p&gt; 
+          .<br>
+          </span></font><font face="Times New Roman, Times, serif"><span lang=ES>&lt;p&gt; 
+          .<br>
+          </span></font><font face="Times New Roman, Times, serif">&lt;/body&gt;<br>
+          </font><font face="Times New Roman, Times, serif">&lt;/html&gt;</font></p>
+        <p>&nbsp;</p>
+        <p><font face="Times New Roman, Times, serif">Simple Exercise - Copy the 
+          peices of code above into NOTEPAD and seave teh file(s) as <em>filename</em>.html. 
+          Then open these files in a browser (e.g. IE Explorer). DO yo see ho 
+          wthe code works? Now change the code in NOTEPAD (add a phrase of your 
+          own) and save it again. Hitting REFRESH on your browser to update your 
+          changes. You have written HTML code for the web!</font></p>
+        <p><font size="6" face="Times New Roman, Times, serif"><strong>ENTER JAVASCRIPT</strong></font></p>
+        <p><font size="6" face="Times New Roman, Times, serif"></font><font face="Times New Roman, Times, serif">Now, 
+          to make your page more dynamic and interesting, enter JavaScript!</font></p>
+        <p><font face="Times New Roman, Times, serif">The most popular reason 
+          for using JavaScript is “the rollover” or &quot;rollover image&quot;.  
+          This feature allows the visitor to your web site to view different images 
+          depending on whether or not their mouse is rolled over a particular 
+          image or text in your web site.  An example of rollover code follows:</font></p>
+        <p><font face="Times New Roman, Times, serif"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('rollover','','/images/hover_example_down.gif',1)"><img src="../../images/hover_example_up.gif" name="rollover" width="100" height="100" border="0"></a></font></p>
+        <p><font face="Times New Roman, Times, serif">Notice that when you rollover 
+          the image, the image changes. Below is some sample code that accomplish 
+          this type of web enhancement.</font></p>
+        <p><font face="Times New Roman, Times, serif">&lt;HTML&gt;<br>
+          </font><font face="Times New Roman, Times, serif">&lt;HEAD&gt;<br>
+          </font><font face="Times New Roman, Times, serif">&lt;TITLE&gt;Link 
+          Rollover&lt;/TITLE&gt;<br>
+          </font><font face="Times New Roman, Times, serif">&lt;script language=&quot;JavaScript&quot;&gt; 
+          </font></p>
+        <p><font face="Times New Roman, Times, serif">&lt;!--Hide script from 
+          old browsers</font></p>
+        <p><font face="Times New Roman, Times, serif">if (<span class=SpellE>document.images</span>) 
+          {</font></p>
+        <p><font face="Times New Roman, Times, serif">    final = new Image</font></p>
+        <p><font face="Times New Roman, Times, serif">    <span
+class=SpellE>finhov</span> = new Image</font></p>
+        <p><font face="Times New Roman, Times, serif">            <span
+class=SpellE>final.src</span> = &quot;<span class=SpellE>hover_down.gif</span>&quot;</font></p>
+        <p><font face="Times New Roman, Times, serif">            <span
+class=SpellE>finhov.src</span> = &quot;hover_up<span class=SpellE>.gif</span>&quot;</font></p>
+        <p><font face="Times New Roman, Times, serif">}</font></p>
+        <p><font face="Times New Roman, Times, serif">else  {</font></p>
+        <p><font face="Times New Roman, Times, serif">            final = &quot;&quot;</font></p>
+        <p><font face="Times New Roman, Times, serif">            <span
+class=SpellE>finhov</span> = &quot;&quot;</font></p>
+        <p><font face="Times New Roman, Times, serif">            <span
+class=SpellE>document.fin</span> = &quot;&quot;</font></p>
+        <p><font face="Times New Roman, Times, serif">}</font></p>
+        <p><font face="Times New Roman, Times, serif">// End hiding script from 
+          old browsers --&gt;</font></p>
+        <p><font face="Times New Roman, Times, serif">&lt;/SCRIPT&gt;<br>
+          </font><font face="Times New Roman, Times, serif">&lt;/HEAD&gt;</font></p>
+        <p><font face="Times New Roman, Times, serif">&lt;BODY BBGCOLOR=&quot;CORNFLOWER&quot;&gt;<br>
+          </font><font face="Times New Roman, Times, serif">&lt;h1&gt;&lt;A HREF=&quot;next.html&quot; 
+          <span
+class=SpellE>onMouseover</span>=&quot;<span class=SpellE>document.fin.src</span>=<span
+class=SpellE>final.src</span>&quot;<br>
+          </font><font face="Times New Roman, Times, serif"><span class=SpellE>onMouseout</span>=&quot;<span
+class=SpellE>document.fin.src</span>=<span class=SpellE>finhov.src</span>&quot;&gt;<br>
+          </font><font face="Times New Roman, Times, serif">&lt;IMG SCR=images/final-<span class=SpellE>hover.gif</span>&quot; 
+          WIDTH=147&quot; HEIGHT=&quot;82&quot; NAME=&quot;fin&quot; ALT=&quot;fin&quot;&gt;&lt;/A&gt;<br>
+          </font><font face="Times New Roman, Times, serif">&lt;/BODY&gt;<br>
+          </font><font face="Times New Roman, Times, serif">&lt;/HTML&gt;</font></p>
+        <hr>
+        <p><font face="Times New Roman, Times, serif">Can you see how this works? 
+          There are several parts to this: The image sources (hover_down and hover_up) 
+          and the onMouseover command in the &lt;h1&gt; are the key elements. 
+          In order for this to work, you need to make certain that your <em>filename</em>.gif 
+          files are available in the same directory as your program file.</font></p>
+        <p><font face="Times New Roman, Times, serif">Another popular reason to 
+          use JavaScript is to develop a data entry form that verifies fields 
+          and redirects the user to a particular location on your data entry form 
+          if verification fails.  Here is an example of this code:</font></p>
+        <p><font face="Times New Roman, Times, serif">&lt;html&gt;<br>
+          </font><font face="Times New Roman, Times, serif">&lt;font size=&quot;2&quot; 
+          face=&quot;Arial&quot; color=&quot;#FF0000&quot;&gt;<br>
+          </font><font face="Times New Roman, Times, serif">&lt;form name=&quot;<span class=SpellE>TheForm</span>&quot;&gt;<br>
+          </font><font face="Times New Roman, Times, serif">&lt;input type=&quot;text&quot; 
+          name=&quot;nm&quot;  size=&quot;33&quot;&gt; Your Name<br>
+          </font><font face="Times New Roman, Times, serif">&lt;<span class=SpellE>br</span>&gt;&lt;<span class=SpellE>br</span>&gt;<br>
+          </font><font face="Times New Roman, Times, serif">&lt;input type=&quot;text&quot; 
+          name=&quot;<span
+class=SpellE>em</span>&quot;  size=&quot;33&quot;&gt; E-mail address<br>
+          </font><font face="Times New Roman, Times, serif">&lt;<span class=SpellE>br</span>&gt;<br>
+          </font><font face="Times New Roman, Times, serif">&lt;input type=&quot;text&quot; 
+          name=&quot;<span
+class=SpellE>emx</span>&quot; size=&quot;33&quot;&gt; Re-enter to confirm<br>
+          </font><font face="Times New Roman, Times, serif">&lt;<span class=SpellE>br</span>&gt;&lt;<span class=SpellE>br</span>&gt;<br>
+          </font><font face="Times New Roman, Times, serif">&lt;input type=&quot;button&quot; 
+          value=&quot;Submit&quot; name=&quot;SB&quot; <span class=SpellE>onClick</span>=&quot;<span class=SpellE>sendOff</span>();&quot;&gt;<br>
+          </font><font face="Times New Roman, Times, serif">&lt;script language=&quot;JavaScript1.2&quot;&gt;<br>
+          </font><font face="Times New Roman, Times, serif"><span class=SpellE>var</span> 
+          good;<br>
+          <br>
+          </font><font face="Times New Roman, Times, serif">function <span class=SpellE>checkEmailAddress</span>(field) 
+          {</font></p>
+        <p><font face="Times New Roman, Times, serif">// Note: The next expression 
+          must be all on one line...<br>
+          </font><font face="Times New Roman, Times, serif">//       allow no 
+          spaces, linefeeds, or carriage returns!</font></p>
+        <p><font face="Times New Roman, Times, serif"><span class=SpellE>var</span> 
+          <span class=SpellE>goodEmail</span> = <span class=SpellE>field.value.match</span>(/\b(^(\S+@).+((\.com)|(\.net)|(\.<span
+class=SpellE>edu</span>)|(\.mil)|(\.<span class=SpellE>gov</span>)|(\.org)|(\..{2,2}))$)\b/<span
+class=SpellE>gi</span>);</font></p>
+        <p><font face="Times New Roman, Times, serif">if (<span class=SpellE>goodEmail</span>){</font></p>
+        <p><font face="Times New Roman, Times, serif">   good = true</font></p>
+        <p><font face="Times New Roman, Times, serif">} else {</font></p>
+        <p><font face="Times New Roman, Times, serif">   alert('Please enter a 
+          valid e-mail address.')</font></p>
+        <p><font face="Times New Roman, Times, serif"><span class=SpellE>document.TheForm.focus</span>() 
+          // put the cursor in the email field again </font></p>
+        <p><font face="Times New Roman, Times, serif">   <span class=SpellE>field.focus</span>()</font></p>
+        <p><font face="Times New Roman, Times, serif">   <span class=SpellE>field.select</span>()</font></p>
+        <p><font face="Times New Roman, Times, serif">   good = false</font></p>
+        <p><font face="Times New Roman, Times, serif">   }</font></p>
+        <p><font face="Times New Roman, Times, serif">}</font></p>
+        <p><font face="Times New Roman, Times, serif">function <span class=SpellE>sendOff</span>(){</font></p>
+        <p><font face="Times New Roman, Times, serif">   <span class=SpellE>nmcheck</span> 
+          = <span class=SpellE>document.TheForm.nm.value</span>    </font></p>
+        <p><font face="Times New Roman, Times, serif">   if (<span
+class=SpellE>nmcheck.length</span> &lt;1) {</font></p>
+        <p><font face="Times New Roman, Times, serif">      alert('Please enter 
+          your name.')</font></p>
+        <p><font face="Times New Roman, Times, serif">      return</font></p>
+        <p><font face="Times New Roman, Times, serif">   }         </font></p>
+        <p><font face="Times New Roman, Times, serif">   good = false</font></p>
+        <p><font face="Times New Roman, Times, serif">   <span class=SpellE>checkEmailAddress</span>(<span
+class=SpellE>document.TheForm.em</span>)</font></p>
+        <p><font face="Times New Roman, Times, serif">   if ((<span
+class=SpellE>document.TheForm.em.value</span> ==</font></p>
+        <p><font face="Times New Roman, Times, serif">        <span
+class=SpellE>document.TheForm.emx.value</span>)&amp;&amp;(good)){</font></p>
+        <p><font face="Times New Roman, Times, serif">      alert(&quot;Name and 
+          email address fields verified good.&quot;)</font></p>
+        <p><font face="Times New Roman, Times, serif">   }     </font></p>
+        <p><font face="Times New Roman, Times, serif">   if ((<span
+class=SpellE>document.TheForm.em.value</span> !=</font></p>
+        <p><font face="Times New Roman, Times, serif">          <span
+class=SpellE>document.TheForm.emx.value</span>)&amp;&amp;(good)){</font></p>
+        <p><font face="Times New Roman, Times, serif">          alert('Both e-mail 
+          address entries must match.')</font></p>
+        <p><font face="Times New Roman, Times, serif">   }</font></p>
+        <p><font face="Times New Roman, Times, serif">}</font></p>
+        <p><font face="Times New Roman, Times, serif">&lt;/script&gt;<br>
+          </font><font face="Times New Roman, Times, serif">&lt;/form&gt;<br>
+          </font><font face="Times New Roman, Times, serif">&lt;/font&gt;<br>
+          </font><font face="Times New Roman, Times, serif">&lt;/html&gt;</font></p>
+        <hr>
+        <p><font face="Times New Roman, Times, serif">Go ahead and copy the above 
+          code into a blank NOTEPAD document and save it as a <em>filename</em>.html 
+          file. Open it in your browser. What do you see? Do you see the forms 
+          fields? Go ahead and enter data and hit the submit button. What did 
+          you see? Were your name and email address verified? Try entering an 
+          email address that is not of standard format. What happens?</font></p>
+        <p>&nbsp;</p>
+        <p><font face="Times New Roman, Times, serif">You may wonder how the above 
+          programs work.  Well, JavaScript works within an HTML program.  You 
+          simply insert JavaScript code within </font></p>
+        <p><font face="Times New Roman, Times, serif">&lt;script type=”text/<span class=SpellE>javascript</span>: 
+          language=”JavaScript”&gt;</font></p>
+        <p><font face="Times New Roman, Times, serif">ADD JAVASCRIPT STUFF HERE 
+          and when you are finished using JavaScript, simply insert</font></p>
+        <p><font face="Times New Roman, Times, serif">&lt;/script&gt; </font></p>
+        <p><font face="Times New Roman, Times, serif">to end the JavaScript.</font></p>
+        <p>&nbsp;</p>
+        <p><font face="Times New Roman, Times, serif"><b><span style='font-size:14.0pt;'><font color="#FF0000">ASSIGNMENT:</font> 
+          </span></b> Copy the above code for JavaScript and make a rollover image 
+          and form web page of your own. Either add it to your exisisting webpage 
+          or save it as an html file in your &quot;W&quot; drive here at Juniata 
+          College. Send an email to your instructor providing the URL.</font></p>
+        <p><font face="Times New Roman, Times, serif"><br clear=all style='page-break-before:always'>
+          </font></p>
+        <p><font face="Times New Roman, Times, serif"><b><span style='font-size:14.0pt;'>Using 
+          POWER POINT</span></b></font></p>
+        <p><font face="Times New Roman, Times, serif">Now that you’ve reviewed 
+          the basics of HTML and JavaScript, you are probably anxious to find 
+          a program that will develop a web page for you without all the fuss.  
+          Let’s start with PowerPoint.  Turn those exciting slide shows into a 
+          web page by doing the following:</font></p>
+        <p><font face="Times New Roman, Times, serif">A Quick Intro to Power Point</font></p>
+        <p> <font face="Times New Roman, Times, serif">Start <span class=SpellE>powerpoint</span></font></p>
+        <p> <font face="Times New Roman, Times, serif">Go to Start<span style="font-family: Wingdings"> 
+          </span>Programs—<span
+class=SpellE>Powerpoint</span><br>
+          <img border=0 width=300 height=215
+src="../../images/web_dev_files/image002.jpg" v:shapes="_x0000_i1025"> </font></p>
+        <p> <font face="Times New Roman, Times, serif">Power point operates like 
+          most of the Office Suite Which you are probably somewhat familiar. Power 
+          point is the presentation software—it will also make web pages, and 
+          we will do that by the end of the session today.</font></p>
+        <p> <font face="Times New Roman, Times, serif">A quick generation of a 
+          business presentation</font></p>
+        <p> <font face="Times New Roman, Times, serif">Go to file<span style="font-family: Wingdings"> 
+          - </span>new<span style="font-family: Wingdings"> - </span>from general 
+          templates<br>
+          <img border=0 width=408 height=258
+src="../../images/web_dev_files/image004.jpg" v:shapes="_x0000_i1026"> </font></p>
+        <p> <font face="Times New Roman, Times, serif"><span
+style='font:7.0pt "Times New Roman"'> </span> Click on presentations and select 
+          Business Plan<br>
+          <img border=0 width=576 height=413
+src="../../images/web_dev_files/image008.jpg" v:shapes="_x0000_i1027"> </font></p>
+        <p> <font face="Times New Roman, Times, serif">At this point your could 
+          simply go through the presentation and fill it our with the info you 
+          have already put together and produce a business plan, but we will add 
+          a few things to personalize and enhance the presentation.</font></p>
+        <p> <font face="Times New Roman, Times, serif">Changing the Slide Design—Canned 
+          designs.</font></p>
+        <p> <font face="Times New Roman, Times, serif">Go to format<span style="font-family: Wingdings"> 
+          </span>slide design<br>
+          <img border=0 width=384 height=276
+src="../../images/web_dev_files/image011.jpg" v:shapes="_x0000_i1028"> </font></p>
+        <p> <font face="Times New Roman, Times, serif">Really go ahead select 
+          one (Type <span class=SpellE>ctrl+Z</span> if you don’t like it)</font></p>
+        <p> <font face="Times New Roman, Times, serif">Now you could just fill 
+          it in and be done with it, but we would like some on screen navigation 
+          controls</font></p>
+        <p> <font face="Times New Roman, Times, serif">On Screen Navigation Controls</font></p>
+        <p> <font face="Times New Roman, Times, serif">Go to <span class=SpellE>Autoshapes</span> 
+          (in the lower left) and action buttons<br>
+          <img border=0 width=396 height=297
+src="../../images/web_dev_files/image013.jpg" v:shapes="_x0000_i1029"> </font></p>
+        <p> <font face="Times New Roman, Times, serif">Choose the forward button</font></p>
+        <p> <font face="Times New Roman, Times, serif">Drag the crosshairs to 
+          create a small button then this will pop-up<br>
+          <img border=0 width=322 height=361
+src="../../images/web_dev_files/image015.jpg" v:shapes="_x0000_i1030"> </font></p>
+        <p> <font face="Times New Roman, Times, serif">For now you can leave it 
+          on Next Slide, but you can play with the options.</font></p>
+        <p> <font face="Times New Roman, Times, serif">To add A back button go 
+          to <span class=SpellE>autoshapes</span>, select the back button and 
+          draw it the same size as the forward button. Leave it on previous slide</font></p>
+        <p> <font face="Times New Roman, Times, serif">Now add the advance to 
+          end button (The right arrow with the line on it)</font></p>
+        <p> <font face="Times New Roman, Times, serif">Now add the rewind to beginning 
+          button (The left arrow with the line on it)</font></p>
+        <p> <font face="Times New Roman, Times, serif">Now make all the buttons 
+          the same size by</font></p>
+        <p> <font face="Times New Roman, Times, serif"><span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Right 
+          click on the button<span style='font-family:Wingdings;
+
+'> - </span>format <span
+class=SpellE>autoshap</span><span style='font-family:Wingdings;"Times New Roman";'> 
+          - </span>click on size<br>
+          <img border=0 width=252 height=249
+src="../../images/web_dev_files/image017.jpg" v:shapes="_x0000_i1031"> <br>
+          make both the height and width 0.5</font></p>
+        <p> <font face="Times New Roman, Times, serif">Do this for all the buttons.</font></p>
+        <p> <font face="Times New Roman, Times, serif">Align the buttons by</font></p>
+        <p> <font face="Times New Roman, Times, serif">click <span class=SpellE>dragging</span> 
+          the mouse over all the buttons</font></p>
+        <p> <font face="Times New Roman, Times, serif">Click draw<span style="font-family: Wingdings"> 
+          - </span>align or distribute<span style="font-family: Wingdings"> - 
+          </span>align middle</font></p>
+        <p> <font face="Times New Roman, Times, serif">Now to put them on every 
+          page:</font></p>
+        <p> <font face="Times New Roman, Times, serif">Select the button if not 
+          already <span class=SpellE>slected</span></font></p>
+        <p> <font face="Times New Roman, Times, serif">Edit<span style="font-family: Wingdings"> 
+          - </span>copy</font></p>
+        <p> <font face="Times New Roman, Times, serif">press page down to move 
+          to the next slide</font></p>
+        <p> <font face="Times New Roman, Times, serif">Edit—Paste</font></p>
+        <p> <font face="Times New Roman, Times, serif"><span
+style='font:7.0pt "Times New Roman"'> </span> Repeat until all slides are covered</font></p>
+        <p> <font face="Times New Roman, Times, serif">Save your project</font></p>
+        <p> <font face="Times New Roman, Times, serif"><span style='font:7.0pt "Times New Roman"'><font size="3">Hit</font></span> 
+          [F5] to view the presentation </font></p>
+        <p> <font face="Times New Roman, Times, serif">Now Publish to the web</font></p>
+        <p> <font face="Times New Roman, Times, serif">Go tools<span style='font-family:Wingdings;
+'> - </span>options<span
+style='font-family:Wingdings;
+'> - </span>general and click on web options<br>
+          <img border=0 width=324 height=255
+src="../../images/web_dev_files/image020.jpg" v:shapes="_x0000_i1032"> </font></p>
+        <p> <font face="Times New Roman, Times, serif">Click O.K twice</font></p>
+        <p> <font face="Times New Roman, Times, serif">File<span
+style='font-family:Wingdings;
+'> - </span>save as web page</font></p>
+        <p> <font face="Times New Roman, Times, serif">Navigate to w:\www\  and 
+          name the file <span
+class=SpellE>busplan</span></font></p>
+        <p> <font face="Times New Roman, Times, serif">Now close PP and lets go 
+          to<br>
+          <a href="http://students.juniata.edu/youname/busplan.htm">http://students.juniata.edu/youname/busplan.htm</a></font></p>
+        <p> <font face="Times New Roman, Times, serif">An voila you have business 
+          plan <span class=SpellE>powerpoint</span> and web page—quick and easy.</font></p>
+        <p><font face="Times New Roman, Times, serif">DREAMWEAVER</font></p>
+        <p><font face="Times New Roman, Times, serif">Getting some info for use 
+          into the <span class=SpellE>w:drive</span></font></p>
+        <p><font face="Times New Roman, Times, serif"> Go to the W drive: </font></p>
+        <p><font face="Times New Roman, Times, serif"> Go to the WWW directory</font></p>
+        <p><font face="Times New Roman, Times, serif"> Right click and go to create 
+          new folder</font></p>
+        <p><font face="Times New Roman, Times, serif"> </font><font face="Times New Roman, Times, serif">Add 
+          a folder called  it110_web</font></p>
+        <p><font face="Times New Roman, Times, serif"> </font><font face="Times New Roman, Times, serif">GO 
+          to C:\Program Files\Macromedia\<span class=SpellE>Dreamweaver</span> 
+          MX\Samples</font></p>
+        <p><font face="Times New Roman, Times, serif"> Copy the getting started 
+          folder</font></p>
+        <p><font face="Times New Roman, Times, serif"> Go back to w:\www\it110_web</font></p>
+        <p><font face="Times New Roman, Times, serif"> Paste the Copied folder 
+          into that directory</font></p>
+        <p><font face="Times New Roman, Times, serif"><strong><br>
+          The <span class=SpellE>Dreamweaver</span> interface</strong></font></p>
+      </div>
+      <div class=Section1><font face="Times New Roman, Times, serif">Click on 
+        Start<span style='font-family:Wingdings;
+     '> - </span>programs<span
+     style='font-family:Wingdings;
+     '> - </span>macromedia<span
+     style='font-family:Wingdings;
+     '> - </span><span
+     class=SpellE>dreamweaver</span> <span class=SpellE>mx</span></font></div>
+      <div class=Section1> 
+        <p> <font face="Times New Roman, Times, serif"><img border=0 width=576 height=432
+src="../../images/web_dev_files/image022.jpg" v:shapes="_x0000_i1033"> </font></p>
+        <p><font face="Times New Roman, Times, serif">Now over on the right hand 
+          side there is a sites section—there will either be a tab or a list of 
+          sites, we will go to site<span
+style='font-family:Wingdings;
+'> - </span><span
+class=SpellE>newsite</span></font></p>
+        <p> <font face="Times New Roman, Times, serif"><img border=0 width=431 height=436
+src="../../images/web_dev_files/image024.jpg" v:shapes="_x0000_i1034"> </font></p>
+        <p><font face="Times New Roman, Times, serif">3. Call it personal and 
+          click next</font></p>
+        <p><font face="Times New Roman, Times, serif">Leave it on No I do not 
+          want to use a server technology and click next</font></p>
+        <p> <font face="Times New Roman, Times, serif"><img border=0 width=564 height=570
+src="../../images/web_dev_files/image026.jpg" v:shapes="_x0000_i1035"> </font></p>
+        <p><font face="Times New Roman, Times, serif">Fill in the dialog for W:\www\it110_web 
+          (you may also click the folder and navigate there.) Click next</font></p>
+        <p>&nbsp;</p>
+        <p> <font face="Times New Roman, Times, serif"><img border=0 width=564 height=570
+src="../../images/web_dev_files/image028.jpg" v:shapes="_x0000_i1036"> </font></p>
+        <p><font face="Times New Roman, Times, serif"> Click on the folder to 
+          get:</font></p>
+        <p> <font face="Times New Roman, Times, serif"><img border=0 width=428 height=273
+src="../../images/web_dev_files/image030.jpg" v:shapes="_x0000_i1037"> </font></p>
+        <p><font face="Times New Roman, Times, serif">Click on the folder with 
+          the red <span class=SpellE>shplat</span> in the right corner and call 
+          it personal then click open then click select.</font></p>
+        <p> <font face="Times New Roman, Times, serif"><img border=0 width=564 height=570
+src="../../images/web_dev_files/image032.jpg" v:shapes="_x0000_i1038"> </font></p>
+        <p><font face="Times New Roman, Times, serif">Your dialog should not look 
+          like the above. Click NEXT. </font></p>
+        <p><font face="Times New Roman, Times, serif">Leave the site definition 
+          on no do not check in and check out Click Next.</font></p>
+        <p> <font face="Times New Roman, Times, serif"><img border=0 width=564 height=570
+src="../../images/web_dev_files/image034.jpg" v:shapes="_x0000_i1039"> </font></p>
+        <p><font face="Times New Roman, Times, serif">You dialog should not look 
+          like the above.  Click DONE.</font></p>
+        <p> <font face="Times New Roman, Times, serif"> <img border=0 width=576 height=413
+src="../../images/web_dev_files/image037.jpg" v:shapes="_x0000_i1040"> </font></p>
+        <p><font face="Times New Roman, Times, serif">Creating a first page</font></p>
+      </div>
+      <div class=Section1><font face="Times New Roman, Times, serif">Go to file<span style='font-family:Wingdings;
+     '> - </span>New document</font></div>
+      <div class=Section1> 
+        <p> <font face="Times New Roman, Times, serif"><img border=0 width=576 height=432
+src="../../images/web_dev_files/image039.jpg" v:shapes="_x0000_i1041"> </font></p>
+      </div>
+      <div class=Section1><font face="Times New Roman, Times, serif">First SINGLE 
+        CLICK around to the various possibilities to see what your options are, 
+        but DO NOT select any yet.</font></div>
+      <div class=Section1><font face="Times New Roman, Times, serif">Go to basic 
+        page<span style='font-family:Wingdings;
+     '> - </span>click on a color scheme you like  and click on CREATE</font></div>
+      <div class=Section1> 
+        <p> <font face="Times New Roman, Times, serif"><img border=0 width=468 height=351
+src="../../images/web_dev_files/image040.jpg" v:shapes="_x0000_i1042"> </font></p>
+      </div>
+      <div class=Section1><font face="Times New Roman, Times, serif">Your page 
+        should now look like this, if it doesn’t, go to view<span
+     style='font-family:Wingdings;
+     '> - </span>design</font></div>
+      <div class=Section1> 
+        <p> <font face="Times New Roman, Times, serif"><img border=0 width=576 height=413
+src="../../images/web_dev_files/image042.jpg" v:shapes="_x0000_i1043"> </font></p>
+      </div>
+      <div class=Section1><font face="Times New Roman, Times, serif">File—save<span
+     style='font-family:Wingdings;
+     '> - </span> call the file index</font></div>
+      <div class=Section1><font face="Times New Roman, Times, serif">File<span
+     style='font-family:Wingdings;
+     '> - </span>save as –call the file me<br>
+        Do this again for files called schedule, hobbies, <span class=SpellE>MomDad</span><br>
+        <br>
+        </font></div>
+      <div class=Section1><font face="Times New Roman, Times, serif">Now to create 
+        a basic table based design—not fancy, but functional and quick. Click 
+        on insert<span style='font-family:Wingdings;"Times New Roman";'> - </span>table 
+        </font></div>
+      <div class=Section1> 
+        <p> <font face="Times New Roman, Times, serif"><img border=0 width=368 height=177
+src="../../images/web_dev_files/image044.jpg" v:shapes="_x0000_i1044"> </font></p>
+      </div>
+      <div class=Section1><font face="Times New Roman, Times, serif">Change the 
+        rows to 5 and the columns to 5 and click OK.</font></div>
+      <div class=Section1> 
+        <p> <font face="Times New Roman, Times, serif"><img border=0 width=576 height=413
+src="../../images/web_dev_files/image046.jpg" v:shapes="_x0000_i1045"> </font></p>
+        <p><font face="Times New Roman, Times, serif">This will now be you page</font></p>
+      </div>
+      <div class=Section1><font face="Times New Roman, Times, serif">Now we will 
+        merge the lower right cells by selecting them with the LEFT mouse button 
+        and dragging. </font></div>
+      <div class=Section1> 
+        <p> <font face="Times New Roman, Times, serif"><img border=0 width=456 height=327
+src="../../images/web_dev_files/image048.jpg" v:shapes="_x0000_i1046"> </font></p>
+      </div>
+      <div class=Section1><font face="Times New Roman, Times, serif">Go to Modify<span style='font-family:Wingdings;
+     '> - </span> Tables<span style='font-family:Wingdings;
+     '> - </span> merge cells</font></div>
+      <div class=Section1> 
+        <p> <font face="Times New Roman, Times, serif"><img border=0 width=576 height=413
+src="../../images/web_dev_files/image050.jpg" v:shapes="_x0000_i1047"> </font></p>
+      </div>
+      <div class=Section1><font face="Times New Roman, Times, serif">Now we will 
+        fill in the top and left side areas to create “navigation bars”</font></div>
+      <div class=Section1> 
+        <p> <font face="Times New Roman, Times, serif"><img border=0 width=432 height=309
+src="../../images/web_dev_files/image052.jpg" v:shapes="_x0000_i1048"> </font></p>
+        <p><font face="Times New Roman, Times, serif">to Center the text select 
+          the text the text<span
+style='font-family:Wingdings;
+'> - </span>align<span
+style='font-family:Wingdings;
+'> - </span>center</font></p>
+      </div>
+      <div class=Section1><font face="Times New Roman, Times, serif">Now we will 
+        add links to all the other pages by selecting the text and then RIGHT 
+        CLICK and Make Link. </font></div>
+      <div class=Section1> 
+        <p> <font face="Times New Roman, Times, serif"><img border=0 width=431 height=407
+src="../../images/web_dev_files/image054.jpg" v:shapes="_x0000_i1049">  </font></p>
+        <p><font face="Times New Roman, Times, serif">for home select index, for 
+          me select me, etc. until both the top and the side are filled in.</font></p>
+      </div>
+      <div class=Section1><font face="Times New Roman, Times, serif">Now to copy 
+        this to all the other pages  RIGHT CLICK on the table<span style='font-family:Wingdings;
+     
+     '> - </span>table<span
+     style='font-family:Wingdings;
+     '> - </span>select table.</font></div>
+      <div class=Section1><font face="Times New Roman, Times, serif"><br>
+        Edit copy</font></div>
+      <div class=Section1> 
+        <p> <font face="Times New Roman, Times, serif"> <img border=0 width=312 height=224
+src="../../images/web_dev_files/image057.jpg" v:shapes="_x0000_i1050"> </font></p>
+      </div>
+      <div class=Section1><font face="Times New Roman, Times, serif">Now to preview 
+        in the browser file—preview in browser. Click the files—note it is hard 
+        to tell where you are.</font></div>
+      <div class=Section1><font face="Times New Roman, Times, serif">So we will 
+        put in some simple effects.  Start in index and select home. Now in the 
+        text tool are below the design click the right justify button and save. 
+        Repeat this for the other layers.</font></div>
+      <div class=Section1> 
+        <p><font face="Times New Roman, Times, serif"><strong>DREAMWEAVER Part 
+          II</strong></font></p>
+        <p>I. </p>
+        <p>&nbsp;</p>
+        <p><font face="Times New Roman, Times, serif">II. Adding images and text 
+          to your web pages</font></p>
+        <ol start=1 type=1>
+          <li> 
+            <p><font face="Times New Roman, Times, serif">Open <span
+     class=SpellE>Dreamweaver</span></font></p>
+          </li>
+          <li> 
+            <p><font face="Times New Roman, Times, serif">Open a Browser</font></p>
+          </li>
+          <li> 
+            <p><font face="Times New Roman, Times, serif">go to www.juniata.edu</font></p>
+          </li>
+          <li> 
+            <p><font face="Times New Roman, Times, serif">right click on the founder’s 
+              images and save to your web personal directory (or wherever your 
+              base web directory is for this sample project.</font></p>
+          </li>
+          <li> 
+            <p><font face="Times New Roman, Times, serif">Go back to <span class=SpellE>dreamweaver</span></font></p>
+          </li>
+          <li> 
+            <p><font face="Times New Roman, Times, serif">go to INSERT<span style='font-family:Wingdings;
+     '> - </span>IMAGE</font></p>
+          </li>
+          <li> 
+            <p><font face="Times New Roman, Times, serif">Navigate to w:\\www\it110_web\personal  
+              (or wherever you save your web images) and add <span class=SpellE>act.jpg</span></font></p>
+          </li>
+          <li> <font face="Times New Roman, Times, serif"><span style='     position:absolute;z-index:3;left:0px;
+     width:235px;height:121px'><img width=235 height=121
+     src="../../images/web_dev_files/image058.gif"
+     alt="Rectangular Callout: Your image properties has the image at 500 by 200 lets change that to 250 by 100"
+     v:shapes="_x0000_s1028"></span> 
+            <p align="left"><br>
+              <img border=0 width=539 height=404
+     src="../../images/web_dev_files/image060.jpg" v:shapes="_x0000_i1051"> </p>
+            </font></li>
+          <li> 
+            <p><font face="Times New Roman, Times, serif">Now lets put that in 
+              the upper left corner by</font></p>
+          </li>
+          <ol start=1 type=a>
+            <li> 
+              <p><font face="Times New Roman, Times, serif">Clicking the right 
+                arrow on the keyboard to activate the cell</font></p>
+            </li>
+            <li> <font face="Times New Roman, Times, serif"> 
+              <p align="left"><br>
+                <img border=0 width=568 height=361
+      src="../../images/web_dev_files/image063.jpg" v:shapes="_x0000_i1052"> </p>
+              </font></li>
+          </ol>
+          <li> 
+            <p><font face="Times New Roman, Times, serif">Now let’s add some text 
+              to the cell—type in whatever you like, but enough so it begins to 
+              wrap.</font></p>
+          </li>
+          <li> 
+            <p><font face="Times New Roman, Times, serif">Now click back on the 
+              image to make it active</font></p>
+          </li>
+          <li> <font face="Times New Roman, Times, serif"><span style='     position:absolute;z-index:5;left:0px;
+     width:301px;height:115px'><img width=301 height=115
+     src="../../images/web_dev_files/image064.gif"
+     alt="Rectangular Callout: Experiment with the various alignment settings to get and effect.  See where they put the image. I am going to settle on left."
+     v:shapes="_x0000_s1030"></span> 
+            <p><br>
+              <img border=0 width=639 height=439
+     src="../../images/web_dev_files/image066.jpg" v:shapes="_x0000_i1053"> </p>
+            </font></li>
+          <li> 
+            <p><font face="Times New Roman, Times, serif">Now time to add some 
+              hotspots to the image—hotspots are places you can click on the image 
+              to create links to other pages.</font></p>
+          </li>
+          <ol start=1 type=a>
+            <li> 
+              <p><font face="Times New Roman, Times, serif">Click on the image</font></p>
+            </li>
+            <li> <font face="Times New Roman, Times, serif"><span style='      position:absolute;z-index:8;left:0px;
+      width:278px;height:59px'><img width=278 height=59
+      src="../../images/web_dev_files/image067.gif"
+      alt="Rectangular Callout: 3. Fill in the target URL" v:shapes="_x0000_s1033"></span> 
+              <span style='      position:absolute;z-index:7;left:0px;
+      width:328px;height:84px'><img width=328 height=84
+      src="../../images/web_dev_files/image068.gif"
+      alt="Rectangular Callout: 2. Draw a rectangle around the Juniata College section of the image. (Hmm a spelling error on Pennsylvania)."
+      v:shapes="_x0000_s1032"></span> <span style='      position:absolute;z-index:6;left:0px;
+      width:303px;height:42px'><img width=303 height=42
+      src="../../images/web_dev_files/image069.gif"
+      alt="Rectangular Callout: 1. Click on the rectangular hotpost" v:shapes="_x0000_s1031"></span> 
+              <p align="left"><br>
+                <img border=0 width=500 height=371
+      src="../../images/web_dev_files/image071.jpg" v:shapes="_x0000_i1054"> </p>
+              </font></li>
+            <li> 
+              <p><font face="Times New Roman, Times, serif">Now save and preview 
+                in the browser.  </font></p>
+            </li>
+            <li> 
+              <p><font face="Times New Roman, Times, serif">Play with the various 
+                settings until you get something you like</font></p>
+            </li>
+          </ol>
+          <li> 
+            <p><font face="Times New Roman, Times, serif">Finally, we will ad 
+              a header to the page by:</font></p>
+          </li>
+          <ol start=1 type=a>
+            <li> 
+              <p><font face="Times New Roman, Times, serif">Going to flamingtext.com 
+                again </font></p>
+            </li>
+            <li> 
+              <p><font face="Times New Roman, Times, serif">Click on headings</font></p>
+            </li>
+            <li> 
+              <p><font face="Times New Roman, Times, serif">Pick a style you like</font></p>
+            </li>
+            <li> 
+              <p><font face="Times New Roman, Times, serif">Type in the banner 
+                heading</font></p>
+            </li>
+            <li> 
+              <p><font face="Times New Roman, Times, serif">Click create logo</font></p>
+            </li>
+            <li> 
+              <p><font face="Times New Roman, Times, serif">Wait till it appears</font></p>
+            </li>
+            <li> 
+              <p><font face="Times New Roman, Times, serif">Right <span class=SpellE>clibk</span> 
+                and download to your personal folder</font></p>
+            </li>
+            <li> 
+              <p><font face="Times New Roman, Times, serif">Type <span class=SpellE>ctrl+home</span></font></p>
+            </li>
+            <li> 
+              <p><font face="Times New Roman, Times, serif">Hit the enter key</font></p>
+            </li>
+            <li> 
+              <p><font face="Times New Roman, Times, serif">INSERT<span
+      style='font-family:Wingdings;
+      '> - </span>Image</font></p>
+            </li>
+            <li> 
+              <p><font face="Times New Roman, Times, serif">Preview page<br>
+                <br>
+                </font></p>
+            </li>
+          </ol>
+        </ol>
+        <p><font face="Times New Roman, Times, serif">Dream weaver 3</font></p>
+        <p><font face="Times New Roman, Times, serif">Using frames and  the built-in 
+          navigation bars</font></p>
+        <p> <font face="Times New Roman, Times, serif">I.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+          </span> Intro:</font></p>
+        <p><font face="Times New Roman, Times, serif">Today we are going to use 
+          the built in navigation bars within the contexts of frames.  Frames 
+          actually paste multiple web pages together in a single computer window 
+          rather than adding a whole new web page in a whole new window.  The 
+          process consists of:</font></p>
+        <p> <font face="Times New Roman, Times, serif">1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span> starting 
+          up a frame set</font></p>
+        <p> <font face="Times New Roman, Times, serif">2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span> Adding 
+          a navigation bar</font></p>
+        <p> <font face="Times New Roman, Times, serif">3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span> Adding 
+          the target pages to the frame</font></p>
+        <p> <font face="Times New Roman, Times, serif">II.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+          </span> Starting a frameset</font></p>
+        <p> <font face="Times New Roman, Times, serif">1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span> Start 
+          <span class=SpellE>dreamweaver</span></font></p>
+        <p> <font face="Times New Roman, Times, serif">2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span> files<span
+style='font-family:Wingdings;
+'> - </span>new and click on <span class=SpellE>framsets</span> we will click 
+          around here a bit and choose a frameset—watch the screen up front to 
+          see which one we use<br>
+          <img border=0 width=456 height=342
+src="../../images/web_dev_files/image073.jpg" v:shapes="_x0000_i1055"> <br>
+          I am going to choose fixed top, but you could have chosen any other.</font></p>
+        <p> <font face="Times New Roman, Times, serif">3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span> Now 
+          lets go to view—design so we can see what it looks like<br>
+          <img border=0 width=336 height=241
+src="../../images/web_dev_files/image075.jpg" v:shapes="_x0000_i1056"> <br>
+          Note that the upper and lower frames only have grayed out lines—lets 
+          add borders</font></p>
+        <p> <font face="Times New Roman, Times, serif">4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span> Adding 
+          borders:</font></p>
+        <p> <font face="Times New Roman, Times, serif"><span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+          </span>i.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+          </span> Click in the top frame then click on the properties tab about 
+          2/3 of the way down on the left side of the <span class=SpellE>DWeaver</span> 
+          window <img border=0 width=444 height=319
+src="../../images/web_dev_files/image077.jpg" v:shapes="_x0000_i1057"> <br>
+          Now change the borders to yes the width to 10 and the color whatever 
+          you want.</font></p>
+        <p> <font face="Times New Roman, Times, serif">5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span> Now 
+          to add the navigation bar—similar to the other way, but now we will 
+          use the correct tool to do it.</font></p>
+        <p> <font face="Times New Roman, Times, serif"><span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+          </span>i.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+          </span> Insert<span style='font-family:Wingdings;"Times New Roman";'> 
+          - </span>interactive image<span style='font-family:Wingdings;
+
+'> - </span>Navigation Bar<br>
+          <img border=0 width=336 height=261
+src="../../images/web_dev_files/image079.jpg" v:shapes="_x0000_i1058"> </font></p>
+        <p> <font face="Times New Roman, Times, serif"><span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+          </span>ii.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+          </span> We will add the home page, home page button by:</font></p>
+        <p> <font face="Times New Roman, Times, serif">1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span> Changing 
+          the element name</font></p>
+        <p> <font face="Times New Roman, Times, serif">2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span> Browsing 
+          to the up image</font></p>
+        <p> <font face="Times New Roman, Times, serif">3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span> Browsing 
+          to the down image</font></p>
+        <p> <font face="Times New Roman, Times, serif">4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span> Browsing 
+          to the when clicked, go to URL browse to the home page</font></p>
+        <p> <font face="Times New Roman, Times, serif">5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span> Now 
+          we will repeat for all our pages</font></p>
+        <p> <font face="Times New Roman, Times, serif"><span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+          </span>iii.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+          </span> Preview in the Browser.  </font></p>
+        <p> <font face="Times New Roman, Times, serif"><span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+          </span>iv.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+          </span> Click on the <span class=SpellE>nav</span> bar items—did it 
+          take you to the correct places?</font></p>
+        <p> <font face="Times New Roman, Times, serif">6.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span> Now 
+          we could go through and edit our pages to get rid of the other navigation 
+          aids. You should notice at this point that the this type of setup and 
+          <span
+class=SpellE>naviagation</span> has some advantages over the table based approach.  
+          Fewer navigation items smaller space requirement, etc..  One of the 
+          nicest features however is that if you add a links page, then you will 
+          have those link pages come up in the frame and your navigation will 
+          still be there.  </font></p>
+        <p><font face="Times New Roman, Times, serif">So enough of fun and games 
+          with <span class=SpellE>Dreamweaver</span>.</font></p>
+        <p><font face="Times New Roman, Times, serif">Regardless of what you use 
+          to develop your web page, there are certain design issues that you need 
+          to take into consideration.  <i>User-Centered Web Development</i> by 
+          Jonathan Lazar (2001) is a text that addresses such concerns.  According 
+          to Lazar, there are seven stages to the user centered web development 
+          cycle.  The first involves defining who will use your web site and what 
+          are the goals of your site.  In other words, are you hoping to sell 
+          a product or service?  Do you merely wish to provide information on 
+          upcoming events or a possible drug interaction or side effect?  </font></p>
+        <p><font face="Times New Roman, Times, serif">The second stage involves 
+          collecting the user requirements for the web site.  This involves determining 
+          characteristics of the user such as what type of connection they use 
+          and what they expect to see out of a web site.  </font></p>
+        <p><font face="Times New Roman, Times, serif">Stage three involves creating 
+          the conceptual design of the web site.  The following questions should 
+          be asked and answered: “What page layout should be selected?”  “What 
+          graphics will be used.”  “What colors should be used?”    The following 
+          URL addresses specific issues regarding color selection and the effects 
+          of color blindness on site appearance:</font></p>
+        <p><font face="Times New Roman, Times, serif"><span style='font-size:10.0pt;font-family:Arial'>&nbsp;</span><span
+style='font-size:10.0pt'><a href="http://www.firelily.com/opinions/color.html"
+target="_BLANK&#1033;">http://www.firelily.com/opinions/color.html</a></span> 
+          </font></p>
+        <p><font face="Times New Roman, Times, serif">Stage four deals with the 
+          physical design of the site.  This involves the actual coding of the 
+          site.  While stage five involves site testing.  Stage six is implementation 
+          and marketing of the site.  Stage seven involves evaluating and improving 
+          the site.</font></p>
+        <p><font face="Times New Roman, Times, serif">So, you see that web development 
+          is not simply a matter of throwing together a web page.  However, in 
+          order to get comfortable with publishing web sites, it is important 
+          to put something out there!  So, don’t be afraid of mistakes and don’t 
+          wait for the perfect site, get out there and put your site on the web!</font></p>
+        <p><font face="Times New Roman, Times, serif">References:</font></p>
+        <p><font face="Times New Roman, Times, serif">Lazar, Jonathan, 2001. <i>User-Centered 
+          Web Development</i>, Jones and Bartlett Publishers, Sudbury, MA.</font></p>
+      </div>
+      <p>&nbsp;</p>
+      </td>
+  </tr>
+</table>
+</body>
+</html>
